@@ -5,11 +5,17 @@
 
 body {
     text-align: center;
-    background-color: lightgray;
+    background-color: darkgray;
     font-family: 'Slabo 27px', serif;
 }
 
 .wrapper {
+    display: inline-block;
+    background-color: lightgray;
+    width: 80vw;
+    height: 100vh;
+}
+.inner-wrapper {
     display: inline-block;
     margin-top: 20px;
 }
