@@ -110,6 +110,8 @@ let createHTMLObject = {
         buttonElement.textContent = 'x';
         return buttonElement;
     }
+
+
 };
 
 // Event Listeners of created HTML objects
@@ -141,6 +143,7 @@ ulList.addEventListener('click', function(event) {
             createHTMLObject.imageList[parseInt(elementClicked.parentNode.id)] = createHTMLObject.createNotCompletedImage();
 
     } else if (elementClicked.className === 'text-of-list-element') {
+        secondLineButtons.style.width = '100%';
         changeTodoTextInput.value = todoList.todo[parseInt(elementClicked.parentNode.id)].todoText;
         todoList.todoId = parseInt(elementClicked.parentNode.id);
         buttonsContainer.replaceChild(secondLineButtons, firstLineButtons);
