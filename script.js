@@ -1,2 +1,5 @@
 var x = document.getElementById("title");
-x.innerText = "asd";
+
+x.addEventListener("click", function () {
+    x.innerText = "asd";
+});
