@@ -4,7 +4,6 @@
 }
 
 body {
-    text-align: center;
     background-color: darkgray;
     font-family: 'Slabo 27px', serif;
 }
@@ -13,8 +12,15 @@ a {
     text-decoration: none;
 }
 
+#container {
+    display: flex;
+}
+
 /* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+.row {
+    height: 20vh;
+    background-color: #f1f1f1;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -25,21 +31,23 @@ a {
 
 /* Style the counter cards */
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
 }
  /*LEFT CONTENT */
-.sidenav {
-    height: 100%;
+
+ .leftContent {
+    display: flex;
+    height: 100vh;
     width: 10vw;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
+    justify-content: center;
     background-color: #242424;
-    overflow-x: hidden;
+    
+}
+
+.sidenav {
+    background-color: #242424;
     padding-top: 20px;
 }
 
@@ -58,10 +66,20 @@ a {
 
 /* MAIN CONTENT */
 .mainContent {
-    display: inline-block;
+    display: block;
     background-color: lightgray;
     width: 80vw;
     height: 100vh;
+    text-align: center;
+}
+
+.main-content-main-section {
+    height: 80vh;
+
+}
+.clock-keys-container {
+    display: flex;
+    justify-content: center;
 }
 
 .inner-wrapper {
@@ -73,5 +91,7 @@ a {
     display: inline-block;
     vertical-align: top;
     margin-top: 60px;
+}
+.rightContent {
 }
 

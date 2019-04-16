@@ -116,7 +116,6 @@ let createHTMLObject = {
 
 // Event Listeners of created HTML objects
 const ulList = document.getElementById('list');
-
 const changeTodoButton = document.getElementById('change-todo-button');
 let changeTodoTextInput = document.getElementById('change-todo-text-input');
 const addButton = document.getElementById('add-button');

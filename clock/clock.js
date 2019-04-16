@@ -21,11 +21,9 @@ function setData() {
     minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
 
     let hours = now.getHours();
-    console.log(hours);
-    hours = (hours * 10) + ((minutes/60) * minutes);
-    console.log(hours);
+    hours = hours + (minutes/60);
 
-    const hoursDegrees = ((hours / 120) * 360) + 90;
+    const hoursDegrees = ((hours / 12) * 360) + 90;
     hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
 }
 
