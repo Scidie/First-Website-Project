@@ -8,7 +8,29 @@ body {
     background-color: darkgray;
     font-family: 'Slabo 27px', serif;
 }
-/* SIDENAV */
+
+a {
+    text-decoration: none;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+ /*LEFT CONTENT */
 .sidenav {
     height: 100%;
     width: 10vw;
@@ -33,12 +55,15 @@ body {
     color: #f1f1f1;
 }
 
-.wrapper {
+
+/* MAIN CONTENT */
+.mainContent {
     display: inline-block;
     background-color: lightgray;
     width: 80vw;
     height: 100vh;
 }
+
 .inner-wrapper {
     display: inline-block;
     margin-top: 20px;
@@ -50,6 +75,3 @@ body {
     margin-top: 60px;
 }
 
-a {
-    text-decoration: none;
-}

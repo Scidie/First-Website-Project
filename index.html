@@ -8,43 +8,75 @@
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 </head>
 <body>
-<!-- SIDENAV -->
-<div class="sidenav">
-    <a href="index.html">index</a>
-    <a href="todoList/todo_list.html">Todo List</a>
-</div>
+<div id="container">
+   <div class="leftContent">
+      <div class="sidenav">
+         <a href="index.html">index</a>
+         <a href="todoList/todo_list.html">Todo List</a>
+      </div>
+   </div>
 
-<div class="wrapper">
-    <div class="inner-wrapper">
-        <div class="header">
-            <h1 id="title">Miki & Miko Software Website</h1>
-            <h2><a href="todoList/todo_list.html">check my cool todo List!</a></h2>
-        </div>
+   <div class="mainContent">
+         <div class="inner-wrapper">
+            <div class="header">
+               <h1 id="title">Miki & Miko Software Website</h1>
+               <h2><a href="todoList/todo_list.html">check my cool todo List!</a></h2>
+            </div>
 
-        <div class="clock">
-            <div id="mirek" class="hand seconds-hand"></div>
-            <div class="hand minutes-hand"></div>
-            <div class="hand hours-hand"></div>
-        </div>
-    </div>
+            <div class="clock">
+               <div id="mirek" class="hand seconds-hand"></div>
+               <div class="hand minutes-hand"></div>
+               <div class="hand hours-hand"></div>
+            </div>
+         </div>
 
-    <div class="keys-container">
-        <span id="a" class="key" data-key="65">a - clap</span>
-        <span id="s" class="key" data-key="83">s - hihat</span>
-        <span id="d" class="key" data-key="68">d - kick</span>
-        <span id="f" class="key" data-key="70">f - openhat</span>
-        <span id="g" class="key" data-key="71">g - boom</span>
-        <span id="h" class="key" data-key="72">h - ride</span>
-        <span id="j" class="key" data-key="74">j - snare</span>
+         <div class="keys-container">
+            <span id="a" class="key" data-key="65">a - clap</span>
+            <span id="s" class="key" data-key="83">s - hihat</span>
+            <span id="d" class="key" data-key="68">d - kick</span>
+            <span id="f" class="key" data-key="70">f - openhat</span>
+            <span id="g" class="key" data-key="71">g - boom</span>
+            <span id="h" class="key" data-key="72">h - ride</span>
+            <span id="j" class="key" data-key="74">j - snare</span>
 
-        <audio data-key="65" src="sounds/clap.wav"></audio>
-        <audio data-key="83" src="sounds/hihat.wav"></audio>
-        <audio data-key="68" src="sounds/kick.wav"></audio>
-        <audio data-key="70" src="sounds/openhat.wav"></audio>
-        <audio data-key="71" src="sounds/boom.wav"></audio>
-        <audio data-key="72" src="sounds/ride.wav"></audio>
-        <audio data-key="74" src="sounds/snare.wav"></audio>
-    </div>
+            <audio data-key="65" src="sounds/clap.wav"></audio>
+            <audio data-key="83" src="sounds/hihat.wav"></audio>
+            <audio data-key="68" src="sounds/kick.wav"></audio>
+            <audio data-key="70" src="sounds/openhat.wav"></audio>
+            <audio data-key="71" src="sounds/boom.wav"></audio>
+            <audio data-key="72" src="sounds/ride.wav"></audio>
+            <audio data-key="74" src="sounds/snare.wav"></audio>
+         </div>
+
+      <div class="row">
+         <div class="col s12 m6">
+            <div class="card blue-grey darken-1">
+               <div class="card-content white-text">
+                  <p>check my cool todo List!</p>
+               </div>
+               <div class="card-action">
+                  <a href="todoList/todo_list.html">check it out</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="col s12 m6">
+            <div class="card blue-grey darken-1">
+               <div class="card-content white-text">
+                  <p>Miki & Miko Software face bankruptcy</p>
+               </div>
+               <div class="card-action">
+                  Unable to recover from debt, Miki & Miko Software declared bankruptcy this morning.
+                  <br>
+                  All major shareholders have already succesfuly raided two main data centers of the company.
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="rightContent">
+
+   </div>
 </div>
 <script src="script.js"></script>
 <script src="clock/clock.js"></script>
