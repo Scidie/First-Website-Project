@@ -13,6 +13,7 @@ function removeTransition (e) {
 const keys = Array.from(document.querySelectorAll('.key'));
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
+//Event listener for click event__________________________________________________________________________
 window.addEventListener('click', function (e) {
     const key = document.querySelector(`span[id="${e.target.id}"]`)
     const audio = document.querySelector(`audio[data-key="${key.getAttribute('data-key')}"]`);

@@ -1,0 +1,30 @@
+.keys-container{
+    display: flex;
+    margin: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.key {
+    display: flex;
+    user-select:none;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: solid 1px black;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    transition: .07s;
+    box-sizing: border-box;
+    background-color: cyan;
+    border-radius: 10%;
+    border: solid 4px black;
+    font-weight: bold;
+}
+
+.playing {
+    transform: scale(1.1);
+    border: solid 2px red;
+    background-color: cornflowerblue;
+}
