@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Epic Website</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="clock/clock.css">
-        <link rel="stylesheet" type="text/css" href="percussion/percussion.css">
-        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-    </head>
-    <body>
-        <div class="wrapper">
-            <div class="inner-wrapper">
-                <div class="header">
-                    <h1 id="title">Miki & Miko Software Website</h1>
-                    <h2><a href="todoList/index.html">check my cool todo List!</a></h2>
-                </div>
-            
-                <div class="clock">
-                    <div id="mirek" class="hand seconds-hand"></div>
-                    <div class="hand minutes-hand"></div>
-                    <div class="hand hours-hand"></div>
-                </div>
-            </div>  
-
-            <div class="keys-container">
-                <span id="a" class="key" data-key="65">a - clap</span>
-                <span id="s" class="key" data-key="83">s - hihat</span>
-                <span id="d" class="key" data-key="68">d - kick</span>
-                <span id="f" class="key" data-key="70">f - openhat</span>
-                <span id="g" class="key" data-key="71">g - boom</span>
-                <span id="h" class="key" data-key="72">h - ride</span>
-                <span id="j" class="key" data-key="74">j - snare</span>
-
-                <audio data-key="65" src="sounds/clap.wav"></audio>
-                <audio data-key="83" src="sounds/hihat.wav"></audio>
-                <audio data-key="68" src="sounds/kick.wav"></audio>
-                <audio data-key="70" src="sounds/openhat.wav"></audio>
-                <audio data-key="71" src="sounds/boom.wav"></audio>
-                <audio data-key="72" src="sounds/ride.wav"></audio>
-                <audio data-key="74" src="sounds/snare.wav"></audio>                      
-            </div>
+<head>
+    <title>Epic Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="clock/clock.css">
+    <link rel="stylesheet" type="text/css" href="percussion/percussion.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="inner-wrapper">
+        <div class="header">
+            <h1 id="title">Miki & Miko Software Website</h1>
+            <h2><a href="todoList/index.html">check my cool todo List!</a></h2>
         </div>
-        <script src="script.js"></script>
-        <script src="clock/clock.js"></script>
-        <script src="percussion/percussion.js"></script>
-    </body>
+
+        <div class="clock">
+            <div id="mirek" class="hand seconds-hand"></div>
+            <div class="hand minutes-hand"></div>
+            <div class="hand hours-hand"></div>
+        </div>
+    </div>
+
+    <div class="keys-container">
+        <span id="a" class="key" data-key="65">a - clap</span>
+        <span id="s" class="key" data-key="83">s - hihat</span>
+        <span id="d" class="key" data-key="68">d - kick</span>
+        <span id="f" class="key" data-key="70">f - openhat</span>
+        <span id="g" class="key" data-key="71">g - boom</span>
+        <span id="h" class="key" data-key="72">h - ride</span>
+        <span id="j" class="key" data-key="74">j - snare</span>
+
+        <audio data-key="65" src="sounds/clap.wav"></audio>
+        <audio data-key="83" src="sounds/hihat.wav"></audio>
+        <audio data-key="68" src="sounds/kick.wav"></audio>
+        <audio data-key="70" src="sounds/openhat.wav"></audio>
+        <audio data-key="71" src="sounds/boom.wav"></audio>
+        <audio data-key="72" src="sounds/ride.wav"></audio>
+        <audio data-key="74" src="sounds/snare.wav"></audio>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="clock/clock.js"></script>
+<script src="percussion/percussion.js"></script>
+</body>
 </html>
