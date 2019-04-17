@@ -16,6 +16,7 @@ a {
     text-decoration: none;
 }
 
+/* TODO zmniejszyc prawy content - prawa kolumne, bardziej podluzna niz szeroka */
 #container {
     display: flex;
     flex-direction: row;
@@ -79,6 +80,15 @@ a {
     margin-bottom: 30px;
 }
 
+.row {
+    height: 20vh;
+    background-color: #f1f1f1;
+}
+
+.col {
+    padding-bottom: 2px;
+}
+
 /* Style the counter cards */
 .card {
     padding: 20px;
@@ -92,10 +102,9 @@ a {
     font-family: 'Krub';
 }
 
-/* TODO not working / wypierdolic? */
 .rightContent {
     display: flex;
-    flex-direction: row;
-    padding: 4px;
+    flex-direction: column;
+    padding-inline: 2px;
 }
 
