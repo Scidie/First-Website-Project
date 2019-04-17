@@ -63,7 +63,7 @@ a {
 .main-content-container {
     height: 80vh;
 }
-.clock-keys-container {
+.clock-container {
     display: flex;
     justify-content: center;
 }
