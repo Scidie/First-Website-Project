@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Krub);
-
+@import url(https://fonts.googleapis.com/css?family=Marvel);
+@import url('https://fonts.googleapis.com/css?family=Carrois+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 * {
     padding: 0;
     margin: 0;
@@ -78,6 +81,7 @@ a {
 .main-content-container {
     height: 80vh;
 }
+
 .clock-container {
     display: flex;
     justify-content: center;
@@ -102,19 +106,23 @@ a {
 
 .card:hover {
     background-color: #D1D0D0;
+    transition: transform .2s;
 }
 
 /* Style the counter cards */
 .card {
-    padding: 20px;
+    padding: 20px 5% 18px 20px;
     text-align: justify;
     background-color: #f1f1f1;
     box-shadow: 4px 4px 5px #888888;
 }
 
+.card-title {
+    font-size: 22px;
+}
+
 .card-content {
-    padding: 4px;
-    font-family: 'Krub';
+    font-size: 16px;
 }
 
 .rightContent {
