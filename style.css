@@ -1,9 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Krub);
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: darkgray;
     font-family: 'Slabo 27px', serif;
 }
@@ -14,41 +18,23 @@ a {
 
 #container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
-/* Remove extra left and right margins, due to padding in columns */
-.row {
-    height: 20vh;
-    background-color: #f1f1f1;
-}
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Style the counter cards */
-.card {
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-}
  /*LEFT CONTENT */
 
  .leftContent {
-    display: flex;
-    height: 100vh;
-    width: 10vw;
     justify-content: center;
     background-color: #242424;
-    
+     padding-top: 5%;
+     width: 13%;
 }
 
 .sidenav {
     background-color: #242424;
-    padding-top: 20px;
 }
 
 .sidenav a {
@@ -73,9 +59,8 @@ a {
     text-align: center;
 }
 
-.main-content-main-section {
+.main-content-container {
     height: 80vh;
-
 }
 .clock-keys-container {
     display: flex;
@@ -91,7 +76,26 @@ a {
     display: inline-block;
     vertical-align: top;
     margin-top: 60px;
+    margin-bottom: 30px;
 }
+
+/* Style the counter cards */
+.card {
+    padding: 20px;
+    text-align: justify;
+    background-color: #f1f1f1;
+    box-shadow: 4px 4px 5px #888888;
+}
+
+.card-content {
+    padding: 4px;
+    font-family: 'Krub';
+}
+
+/* TODO not working / wypierdolic? */
 .rightContent {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
 }
 
