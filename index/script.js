@@ -26,20 +26,16 @@ collapsible[0].addEventListener('click', function () {
     }
 });
 
-// news cards collapsible
-let cardCollapsible = document.getElementsByClassName("card-collapsible-button");
+const cardCollapsibleButton = Array.from(document.querySelectorAll('.card-collapsible-button'));
+cardCollapsibleButton.forEach(button => button.addEventListener('click', function(event) {
+    let content = event.target.nextElementSibling;
+    console.log(content);
 
-for (let i = 0; i < cardCollapsible.length; i++) {
-    cardCollapsible[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        let content = this.nextElementSibling;
-
-        if (content.style.maxHeight !== "0px") {
-            content.style.maxHeight = "0px";
-            cardCollapsible[i].innerHTML = "\\/";
-        } else {
-            content.style.maxHeight = "300px";
-            cardCollapsible[i].innerHTML = "X";
-        }
-    });
-}
+    if (content.style.maxHeight !== "0px") {
+        content.style.maxHeight = "0px";
+        button.innerHTML = "\\/";
+    } else {
+        content.style.maxHeight = "300px";
+        button.innerHTML = "X";
+    }
+}));
