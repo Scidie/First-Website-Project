@@ -17,7 +17,6 @@ let collapsible = document.getElementsByClassName("collapsible");
 
 collapsible[0].addEventListener('click', function () {
     this.classList.toggle("active");
-
     let content = this.nextElementSibling;
 
     if (content.style.display === "block") {
@@ -37,9 +36,10 @@ for (let i = 0; i < cardCollapsible.length; i++) {
 
         if (content.style.display === "block") {
             content.style.display = "none";
-            cardCollapsible[i].style.content = "/\"";
+            cardCollapsible[i].innerHTML = "\\/";
         } else {
             content.style.display = "block";
+            cardCollapsible[i].innerHTML = "X";
         }
     });
 }
