@@ -26,10 +26,11 @@ collapsible[0].addEventListener('click', function () {
     }
 });
 
+//hiding and showing (panes) listner with use forEach function instead of "for" loop
 const cardCollapsibleButton = Array.from(document.querySelectorAll('.card-collapsible-button'));
+
 cardCollapsibleButton.forEach(button => button.addEventListener('click', function(event) {
     let content = event.target.nextElementSibling;
-    console.log(content);
 
     if (content.style.maxHeight !== "0px") {
         content.style.maxHeight = "0px";
