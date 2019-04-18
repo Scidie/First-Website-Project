@@ -34,11 +34,11 @@ for (let i = 0; i < cardCollapsible.length; i++) {
         this.classList.toggle("active");
         let content = this.nextElementSibling;
 
-        if (content.style.display === "block") {
-            content.style.display = "none";
+        if (content.style.maxHeight !== "0px") {
+            content.style.maxHeight = "0px";
             cardCollapsible[i].innerHTML = "\\/";
         } else {
-            content.style.display = "block";
+            content.style.maxHeight = "300px";
             cardCollapsible[i].innerHTML = "X";
         }
     });
