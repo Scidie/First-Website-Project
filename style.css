@@ -103,6 +103,31 @@ a {
     margin-bottom: 30px;
 }
 
+/* collapsible button */
+.collapsible {
+    background-color: #242424;
+    color: #818181;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #4D4D4D;
+}
+
+.collapsible-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #888888;
+}
+
 /* RIGHT CONTENT */
 .col {
     font-family: 'Open Sans Condensed', serif;
