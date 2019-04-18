@@ -26,3 +26,20 @@ collapsible[0].addEventListener('click', function () {
         content.style.display = "block";
     }
 });
+
+// news cards collapsible
+let cardCollapsible = document.getElementsByClassName("card-collapsible-button");
+
+for (let i = 0; i < cardCollapsible.length; i++) {
+    cardCollapsible[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            cardCollapsible[i].style.content = "/\"";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
