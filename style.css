@@ -54,7 +54,7 @@ a {
 
 .sidenav-container a {
     transition: 0.2s; /* transition on hover */
-    padding: 2px 4px;
+    padding: 2px 8px;
 }
 
 .sidenav-container :hover {
@@ -63,7 +63,7 @@ a {
     z-index: 100;
     top: -4px;
     margin-bottom: -3px;
-    padding: 6px 2px;
+    padding: 6px 6px;
     box-shadow: 0 4px 5px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
 }
 
