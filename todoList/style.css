@@ -6,10 +6,14 @@
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #4C4A44;
+}
+
+#container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 	height: 100vh;
 	width: 100vw;
 }
@@ -32,7 +36,10 @@ body {
 	background-color: #242424;
 	padding-top: 5%;
 	width: 13%;
+	height: 100%;
 	box-shadow: 4px 4px 5px #888888;
+	min-width: 150px;
+	max-width: 200px;
 }
 
 /* SIDENAV */
@@ -40,9 +47,6 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	text-decoration: none;
-	/*padding: 2px 0px;*/
-	/*color: #818181;*/
 }
 
 .sidenav-item {
@@ -51,24 +55,23 @@ body {
 
 .sidenav a {
 	padding: 2px 8px;
-	text-decoration: none;
 	color: #818181;
 	display: block;
 	font-family: 'Roboto Condensed';
 	font-size: 20px;
+	text-decoration: none;
+	transition: 0.2s; /* transition on hover */
 }
 
 .sidenav a:hover {
 	color: #f1f1f1;
 	background-color: #4D4D4D;
-	position: relative;
 	z-index: 100;
-	top: -3px;
-	margin-bottom: -5px;
-	right: -4px;
-	padding: 4px 2px;
-	/*box-shadow: 4px 4px 5px #242424;*/
-	box-shadow: 0px 4px 5px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
+	top: -4px;
+	margin-bottom: -3px;
+	text-decoration: none;
+	padding: 6px 6px;
+	box-shadow: 0 4px 5px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
 }
 
 
