@@ -10,31 +10,32 @@
    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
 </head>
 <body>
-<div id="container">
-   <div id="leftContent">
-      <div class="sidenav">
-         <div class="sidenav-container">
-            <a href="../index/index.html" class="sidenav-item">index</a>
+<div id="wrapper">
+
+   <div id="left-column">
+      <div id="side-nav">
+         <div id="side-nav-list">
+            <a class="display-block" href="../index/index.html" class="sidenav-item">index</a>
+            <a class="display-block" href="todo_list.html" class="sidenav-item">Todo List</a>
          </div>
-         <div class="sidenav-container">
-            <a href="todo_list.html" class="sidenav-item">Todo List</a>
+      </div> 
+   </div>
+
+   <div id="main-section">
+      <div id="application-container">
+         <p id="title">Todo List<p>
+         <div id="buttons-container">
+            <div id="first-line-buttons" class="center">
+               <button id="add-button" class="button">Add</button>
+               <input type="text" id="add-todo-text-input" class="button" spellcheck="false"></input>
+               <button id="toggle-all-button" class="button" onclick="todoList.toggleAll()">Toggle All</button>
+            </div>
+            <!-- <div id="line"></div> -->
          </div>
+         <div id="list"></div>
       </div>
    </div>
 
-   <div id="main-container">
-      <p id="title">Todo List
-      <p>
-      <div id="buttons-container">
-         <div id="first-line-buttons" class="center">
-            <button id="add-button" class="button">Add</button>
-            <input type="text" id="add-todo-text-input" class="button" spellcheck="false"></input>
-            <button id="toggle-all-button" class="button" onclick="todoList.toggleAll()">Toggle All</button>
-         </div>
-         <!-- <div id="line"></div> -->
-      </div>
-      <div id="list"></div>
-   </div>
    <div id="second-line-buttons" class="center">
       <button id="change-todo-button" class="button">Change</button>
       <input type="text" id="change-todo-text-input" class="button" spellcheck="false"></input>
