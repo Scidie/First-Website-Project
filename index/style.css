@@ -119,6 +119,9 @@ a {
     font-family: 'Open Sans Condensed', serif;
     padding-bottom: 2px;
     background-color:  #f1f1f1;
+    padding: 20px 5% 6px 20px;
+    text-align: justify;
+    box-shadow: 4px 4px 5px #888888;
 }
 
 .col:hover {
@@ -127,12 +130,7 @@ a {
 }
 
 /* Style the counter cards */
-.card {
-    padding: 20px 5% 6px 20px;
-    text-align: justify;
-    background-color: transparent;
-    box-shadow: 4px 4px 5px #888888;
-}
+
 
 .card-title {
     font-size: 22px;
