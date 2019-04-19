@@ -28,8 +28,22 @@ a {
     padding: 0 20px;
 }
 
+.table-entry-link {
+    color: white;
+}
+
+.table-entry :hover {
+    color: gold;
+    width: 115%;
+    height: 115%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
 .table-divider {
     padding: 0 5px;
+    color: white;
+    cursor: context-menu;
 }
 
 #main-content {
