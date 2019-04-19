@@ -16,8 +16,6 @@
     top: 48.5%;
     height: 10px;
     border-radius: 20px;
-    transition: all .05s;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     transform-origin: 100%;
     transform: rotate(90deg);
 }

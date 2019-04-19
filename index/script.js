@@ -26,7 +26,7 @@ collapsible[0].addEventListener('click', function () {
     }
 });
 
-//hiding and showing (panes) listner with use forEach function instead of "for" loop
+//hiding and showing (panes) listener with use forEach function instead of "for" loop
 const cardCollapsibleButton = Array.from(document.querySelectorAll('.card-collapsible-button'));
 
 cardCollapsibleButton.forEach(button => button.addEventListener('click', function(event) {
@@ -34,9 +34,9 @@ cardCollapsibleButton.forEach(button => button.addEventListener('click', functio
     
     if (content.style.maxHeight === "300px") {
         content.style.maxHeight = "0px";
-        button.innerHTML = "\\/";
+        button.style.transform = 'rotate(0deg)'
     } else {
         content.style.maxHeight = "300px";
-        button.innerHTML = "X";
+        button.style.transform = 'rotate(180deg)'
     }
 }));

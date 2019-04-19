@@ -14,7 +14,6 @@ function setData() {
     }
     const secondsDegrees = ((secondsCounter / 60) * 360) + 90;
     secondsHand.style.transform = `rotate(${secondsDegrees}deg)`; 
-    console.log(secondsDegrees);
  
     const minutes = now.getMinutes();
     const minutesDegrees = ((minutes / 60) * 360) + 90;
