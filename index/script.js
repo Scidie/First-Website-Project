@@ -31,8 +31,8 @@ const cardCollapsibleButton = Array.from(document.querySelectorAll('.card-collap
 
 cardCollapsibleButton.forEach(button => button.addEventListener('click', function(event) {
     let content = event.target.nextElementSibling;
-
-    if (content.style.maxHeight !== "0px") {
+    
+    if (content.style.maxHeight === "300px") {
         content.style.maxHeight = "0px";
         button.innerHTML = "\\/";
     } else {

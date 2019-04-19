@@ -125,6 +125,7 @@ a {
     transition: 0.2s;
 }
 
+
 /* Style the counter cards */
 .card {
     padding: 20px 5% 18px 20px;
@@ -154,14 +155,9 @@ a {
     right: -92%; /* TODO should be aligned with text - should not be done like this */
 }
 
-.card-collapsible {
-    background-color: none;
-}
-
 .rightContent {
     display: flex;
     flex-direction: column;
-    padding-inline: 2px;
     min-width: 140px;
     max-width: 400px;
 }
@@ -172,5 +168,9 @@ a {
     overflow: hidden;
     transition: 5s;
     transition-timing-function: cubic-bezier(0.07, 1.06, 0.58, 1);
+}
+
+.card-collapsible-content:hover {
+    background-color: transparent;
 }
 
