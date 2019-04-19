@@ -115,6 +115,13 @@ a {
 }
 
 /* RIGHT CONTENT */
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    min-width: 140px;
+    max-width: 400px;
+}
+
 .col {
     font-family: 'Open Sans Condensed', serif;
     padding-bottom: 2px;
@@ -153,19 +160,12 @@ a {
 /* TODO should be aligned with text - should not be done like this */
 }
 
-.rightContent {
-    display: flex;
-    flex-direction: column;
-    min-width: 140px;
-    max-width: 400px;
-}
-
 .card-collapsible-content {
     text-align: justify;
     padding: inherit;
-    max-height: 0px;
+    max-height: 0;
     overflow: hidden;
-    transition: 3s;
+    transition: 4s;
     transition-timing-function: cubic-bezier(0.07, 1.06, 0.58, 1);
 }
 
