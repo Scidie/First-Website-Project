@@ -18,15 +18,18 @@ a {
 }
 
 .header-content-table {
+    padding: 0 40px;
 }
 
 .header-table-holder {
 }
 
 .table-entry {
+    padding: 0 20px;
 }
 
 .table-divider {
+    padding: 0 5px;
 }
 
 #main-content {
