@@ -118,19 +118,19 @@ a {
 .col {
     font-family: 'Open Sans Condensed', serif;
     padding-bottom: 2px;
+    background-color:  #f1f1f1;
 }
 
-.col :hover {
-    background-color: #D1D0D0;
+.col:hover {
+    background-color: lightgray;
     transition: 0.2s;
 }
-
 
 /* Style the counter cards */
 .card {
     padding: 20px 5% 18px 20px;
     text-align: justify;
-    background-color: #f1f1f1;
+    background-color: transparent;
     box-shadow: 4px 4px 5px #888888;
 }
 
@@ -173,4 +173,3 @@ a {
 .card-collapsible-content:hover {
     background-color: transparent;
 }
-
