@@ -101,14 +101,18 @@ body {
     flex-wrap: nowrap;
     border-style: solid;
     padding: 20px 12px;
-    background-color: #818181;
+    background-color: #888888;
     overflow: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .shelve-entry {
     text-align: justify;
     color: white;
-    padding: 4px;
+    padding: 7px 4px;
 }
 
 .shelve-img {
@@ -119,7 +123,9 @@ body {
     display: flex;
     flex-direction: row;
     color: #D1D0D0;
-
+    top: 40px;
+    overflow: auto;
+    background-color: #818181;
 }
 
 .content-filter-entry {
