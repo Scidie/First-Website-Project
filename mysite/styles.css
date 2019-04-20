@@ -107,7 +107,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    width: 30vh;
+    width: 32vh;
     min-width: 10vh;
     height: 34vh;
     min-height: 16vh;
@@ -178,5 +178,5 @@ body {
 
 .top-container {
     font-size: 40px;
-    margin: 0 35px 80px 0;
+    margin: 0 35px 10% 70px;
 }
