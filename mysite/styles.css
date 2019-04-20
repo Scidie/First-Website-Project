@@ -113,15 +113,16 @@ body {
     min-height: 15vw;
     flex-wrap: nowrap;
     border-style: solid;
+    /*border-color: #242424;*/
     border-color: #888888;
-    padding: 5% 1vw;
+    padding: 1vw 1vw 2vw 1vw;
     background-color: #888888;
     overflow: auto;
 }
 
 .shelve::-webkit-scrollbar {
-    width: 7px;
-    /*color: black;*/
+    /*width: 1vw;*/
+    color: black;
     background: #888888;
 }
 
@@ -137,7 +138,8 @@ body {
 .shelve-entry {
     text-align: justify;
     color: white;
-    padding: 2vw 1vw;
+    padding: 0 1vw;
+    font-size: 1.3vw;
 }
 
 .shelve-img {
@@ -150,8 +152,8 @@ body {
     flex-wrap: nowrap;
     color: #D1D0D0;
     /*overflow: auto;*/
-    /*padding: 1vw 1vw;*/
     min-width: 3vw;
+    min-height: 5vw;
     /*min-height: 1vw;*/
     background-color: #818181;
 }
@@ -159,13 +161,12 @@ body {
 .content-filter-entry {
     padding: 1.5vw 1.5vw;
     font-size: 1.5vw;
-    /*min-font-size: 1vw;*/
 }
 
 
 .footer {
     grid-row-start: 3;
-    padding: 0 20%;
+    padding: 0 15vw;
     margin: 0;
     background-color: #242424;
     color: #818181;
@@ -190,5 +191,5 @@ body {
     flex-direction: row;
     align-items: center;
     text-align: justify;
-    padding: 0 20px 40px 75px;
+    padding: 0 4vw 5vw 30vw;
 }
