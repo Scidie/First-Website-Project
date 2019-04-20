@@ -39,7 +39,7 @@ body {
 }
 
 .header-content-table {
-    margin: 0 100px;
+    margin: 0 80px;
 }
 
 .header-left-holder {
@@ -89,7 +89,7 @@ body {
 .counter-container {
     display: flex;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 75px 0;
 }
 
 .counter {
@@ -98,7 +98,9 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     color: #818181;
-    min-width: 450px;
+    min-width: 400px;
+    min-height: 100px;
+    /*padding: 20px 0;*/
 }
 
 .shelve {
@@ -145,9 +147,11 @@ body {
 .shelve-content-filters {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     color: #D1D0D0;
-    overflow: auto;
+    /*overflow: auto;*/
     padding: 4px 2px;
+    min-width: 4px;
     background-color: #818181;
 }
 
@@ -176,12 +180,13 @@ body {
 
 .top-container {
     font-size: 40px;
-    margin: 0 35px 10% 70px;
+    margin: 0 35px 3% 75px;
 }
 
 .content-containers {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 40px 160px 0;
+    text-align: justify;
+    padding: 0 20px 40px 75px;
 }
