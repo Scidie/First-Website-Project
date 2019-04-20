@@ -120,7 +120,7 @@ body {
     overflow: auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .shelve {
         display: flex;
         justify-content: space-around;
@@ -136,14 +136,22 @@ body {
         border-color: #888888;
         padding: 1vw 1vw 2vw 1vw;
         background-color: #888888;
-        overflow: auto;
+        overflow: hidden;
     }
 
     .content-filter-entry {
         display: grid;
         align-items: center;
-        padding: 2vw 1.5vw;
+        /*padding: 1vw 1.5vw;*/
         font-size: 4vw;
+    }
+
+    .shelve-entry {
+        text-align: justify;
+        color: white;
+        padding: 0 1vw;
+        font-size: 2.5vw;
+        min-font-size: 1.5vw;
     }
 }
 
@@ -221,4 +229,6 @@ body {
     align-items: center;
     text-align: justify;
     padding: 0 4vw 5vw 30vw;
+    font-size: 1vw;
+    min-font-size: 1vw;
 }
