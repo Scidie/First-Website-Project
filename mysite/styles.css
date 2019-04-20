@@ -23,6 +23,8 @@ body {
 
 .header {
     grid-row-start: 1;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     position: sticky;
     top: 0;
@@ -81,11 +83,11 @@ body {
 .top {
 }
 
-.counter-container {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-}
+/*.counter-container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    padding: 15px;*/
+/*}*/
 
 .counter {
     display: flex;
@@ -162,4 +164,9 @@ body {
 }
 
 .header-date-holder {
+}
+
+.title {
+    text-align: center;
+    color: white;
 }
