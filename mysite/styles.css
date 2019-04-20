@@ -95,7 +95,9 @@ body {
     justify-content: space-around;
     flex-direction: column;
     width: 30vh;
+    min-width: 10vh;
     height: 34vh;
+    min-height: 16vh;
     flex-wrap: nowrap;
     border-style: solid;
     padding: 20px 12px;
