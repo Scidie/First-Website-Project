@@ -21,7 +21,6 @@ body {
     background-color: lightgrey;
 }
 
-/* TODO header powinien przystawac do krawedzi strony */
 .header {
     grid-row-start: 1;
     width: 100%;
@@ -31,7 +30,7 @@ body {
     padding: 20px 0;
     font-size: 15px;
     box-shadow: 0 4px 5px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
-    /*grid-template-columns: 50px 90%;*/
+    grid-template-columns: 50px 90%;
     min-width: 50px;
 
 }
@@ -70,18 +69,44 @@ body {
 
 #main-content {
     grid-row-start: 2;
-    padding: 350px 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
     margin: 0 175px;
     background-color: #4D4D4D;
     color: white;
+    box-shadow: 0 11px 12px -7px #000000, 15px 15px 10px 5px rgba(0, 0, 0, 0);
+}
+
+.top {
+}
+
+.counter {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+    color: #818181;
 }
 
 .shelve {
-
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 30vh;
+    height: 34vh;
+    flex-wrap: nowrap;
+    border-style: solid;
+    padding: 20px 12px;
+    background-color: #818181;
+    overflow: auto;
 }
 
-.shelve-title {
-
+.shelve-entry {
+    text-align: justify;
+    color: white;
+    padding: 4px;
 }
 
 .shelve-img {
@@ -89,11 +114,15 @@ body {
 }
 
 .shelve-content-filters {
+    display: flex;
+    flex-direction: row;
+    color: #D1D0D0;
 
 }
 
 .content-filter-entry {
-
+    padding: 3px;
+    font-size: 14px;
 }
 
 
@@ -103,6 +132,7 @@ body {
     margin: 0 175px;
     background-color: #242424;
     color: #818181;
+    box-shadow: 0 11px 12px -7px #000000, 15px 15px 10px 5px rgba(0, 0, 0, 0);
 }
 
 .header-date-holder {
