@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 @import url('https://fonts.googleapis.com/css?family=Exo');
+
 a {
     text-decoration: none;
 }
@@ -15,7 +16,7 @@ body {
     background-color: lightgrey;
 }
 
-
+/* TODO header powinien przystawac do krawedzi strony */
 .header {
     grid-row-start: 1;
     width: 100%;
@@ -31,7 +32,7 @@ body {
 }
 
 .header-content-table {
-    margin: 0 250px;
+    margin: 0 220px;
 }
 
 .header-left-holder {
@@ -64,8 +65,8 @@ body {
 
 #main-content {
     grid-row-start: 2;
-    padding: 350px 100px;
-    margin: 0 155px;
+    padding: 350px 50px;
+    margin: 0 175px;
     background-color: #4D4D4D;
     color: white;
 }
@@ -93,9 +94,10 @@ body {
 
 #bottom-content {
     grid-row-start: 3;
-    padding: 5px 100px;
-    margin: 0 155px;
-    background-color: white;
+    padding: 5px 50px;
+    margin: 0 175px;
+    background-color: #242424;
+    color: #818181;
 }
 
 .header-date-holder {
