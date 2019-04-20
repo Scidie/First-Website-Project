@@ -98,7 +98,7 @@ body {
     flex-wrap: wrap;
     color: #818181;
     min-width: 400px;
-    min-height: 100px;
+    min-height: 250px;
     /*padding: 20px 0;*/
 }
 
@@ -179,7 +179,7 @@ body {
 
 .top-container {
     font-size: 40px;
-    margin: 0 35px 3% 75px;
+    margin: 0 35px 3% 38px;
 }
 
 .content-containers {
