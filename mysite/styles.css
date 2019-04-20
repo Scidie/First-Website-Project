@@ -63,7 +63,7 @@ body {
 }
 
 .table-divider {
-    padding: 0 15px;
+    padding: 0 20px;
     color: powderblue;
     cursor: context-menu;
     text-emphasis: #242424;
@@ -89,7 +89,7 @@ body {
 .counter-container {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .counter {
@@ -106,7 +106,7 @@ body {
     justify-content: space-around;
     flex-direction: column;
     width: 45vh;
-    min-width: 10vh;
+    min-width: 8vh;
     height: 24vh;
     min-height: 20vh;
     flex-wrap: nowrap;
