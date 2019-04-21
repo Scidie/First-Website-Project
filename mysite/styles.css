@@ -30,7 +30,7 @@ body {
     position: sticky;
     top: 0;
     background-color: deepskyblue;
-    padding: 20px;
+    padding: 2%;
     margin: 2% 0 0 0;
     font-size: 15px;
     box-shadow: 0 4px 5px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
@@ -140,7 +140,7 @@ body {
         margin: auto;
     }
 
-    .content-filter-entry {
+    .content-filter-button {
         display: grid;
         align-items: center;
         /*padding: 1vw 1.5vw;*/
@@ -153,7 +153,7 @@ body {
         color: white;
         padding: 0 1vw;
         font-size: 2.7vw;
-        min-font-size: 2.4vw;
+        min-font-size: 2vw;
         margin: auto;
     }
 }
@@ -178,6 +178,7 @@ body {
     color: white;
     padding: 0 1vw;
     font-size: 1.6vw;
+    min-font-size: 1.2vw;
     margin: auto;
 }
 
@@ -198,13 +199,18 @@ body {
     /*margin: auto;*/
 }
 
-.content-filter-entry {
+.content-filter-button {
     display: grid;
     align-items: center;
     padding: 0 1.5vw;
     font-size: 1.5vw;
+    background-color: #818181;
+    border-style: none;
 }
 
+.content-filter-button :hover {
+    cursor: pointer;
+}
 
 .footer {
     grid-row-start: 3;
