@@ -164,7 +164,7 @@ body {
 .shelve-entry {
     text-align: justify;
     color: white;
-    padding: 0.5vw 1vw;
+    padding: 0.5vw 0;
     font-size: 1vw;
     min-font-size: 1.2vw;
     margin: auto;
@@ -192,6 +192,7 @@ body {
     align-items: center;
     padding: 0 1.5vw;
     font-size: 1.5vw;
+    min-font-size: 1vw;
     background-color: #818181;
     border-style: none;
 }
