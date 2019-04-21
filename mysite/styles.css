@@ -30,7 +30,7 @@ body {
     position: sticky;
     top: 0;
     background-color: deepskyblue;
-    padding: 2%;
+    padding: 3% 0;
     margin: 2% 0 0 0;
     font-size: 15px;
     box-shadow: 0 4px 5px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
