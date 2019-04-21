@@ -37,55 +37,37 @@ let handlers = {
         }
 
         if (fieldsArrayCounter === this.fieldsArray.length) {
-            this.createWinnersBoard(this.draw);
-        }
-        else if (this.fieldsArray[0] === symbol && 
-            this.fieldsArray[1] === symbol && 
-            this.fieldsArray[2] === symbol) {
+            this.showWinnersBoard(this.draw);
+        } else if (this.fieldsArray[0] === symbol && this.fieldsArray[1] === symbol && this.fieldsArray[2] === symbol) {
             winnersBoardContainer.style.pointerEvents = 'all';
-            this.createWinnersBoard(symbol);
-        } else if (this.fieldsArray[0] === symbol && 
-            this.fieldsArray[4] === symbol && 
-            this.fieldsArray[8] === symbol) {
+            this.showWinnersBoard(symbol);
+        } else if (this.fieldsArray[0] === symbol && this.fieldsArray[4] === symbol && this.fieldsArray[8] === symbol) {
             winnersBoardContainer.style.pointerEvents = 'all';
-            this.createWinnersBoard(symbol)
-        } else if (this.fieldsArray[0] === symbol && 
-            this.fieldsArray[3] === symbol && 
-            this.fieldsArray[6] === symbol) {
+            this.showWinnersBoard(symbol)
+        } else if (this.fieldsArray[0] === symbol && this.fieldsArray[3] === symbol && this.fieldsArray[6] === symbol) {
             winnersBoardContainer.style.pointerEvents = 'all';
-            this.createWinnersBoard(symbol)
-        } else if (this.fieldsArray[1] === symbol && 
-            this.fieldsArray[4] === symbol && 
-            this.fieldsArray[7] === symbol) {
+            this.showWinnersBoard(symbol)
+        } else if (this.fieldsArray[1] === symbol && this.fieldsArray[4] === symbol && this.fieldsArray[7] === symbol) {
             winnersBoardContainer.style.pointerEvents = 'all';
-            this.createWinnersBoard(symbol)
-        } else if (this.fieldsArray[2] === symbol && 
-            this.fieldsArray[4] === symbol && 
-            this.fieldsArray[6] === symbol) {
+            this.showWinnersBoard(symbol)
+        } else if (this.fieldsArray[2] === symbol && this.fieldsArray[4] === symbol && this.fieldsArray[6] === symbol) {
             winnersBoardContainer.style.pointerEvents = 'all';
-            this.createWinnersBoard(symbol)
-        } else if (this.fieldsArray[2] === symbol && 
-            this.fieldsArray[5] === symbol && 
-            this.fieldsArray[8] === symbol) {
+            this.showWinnersBoard(symbol)
+        } else if (this.fieldsArray[2] === symbol && this.fieldsArray[5] === symbol && this.fieldsArray[8] === symbol) {
             winnersBoardContainer.style.pointerEvents = 'all';
-            this.createWinnersBoard(symbol)
-        } else if (this.fieldsArray[3] === symbol && 
-            this.fieldsArray[4] === symbol && 
-            this.fieldsArray[5] === symbol) {
+            this.showWinnersBoard(symbol)
+        } else if (this.fieldsArray[3] === symbol && this.fieldsArray[4] === symbol && this.fieldsArray[5] === symbol) {
             winnersBoardContainer.style.pointerEvents = 'all';
-            this.createWinnersBoard(symbol)
-        } else if (this.fieldsArray[6] === symbol && 
-            this.fieldsArray[7] === symbol && 
-            this.fieldsArray[8] === symbol) {
+            this.showWinnersBoard(symbol)
+        } else if (this.fieldsArray[6] === symbol && this.fieldsArray[7] === symbol && this.fieldsArray[8] === symbol) {
             winnersBoardContainer.style.pointerEvents = 'all';
-            this.createWinnersBoard(symbol)
+            this.showWinnersBoard(symbol)
         } 
     },
 
-    createWinnersBoard: function(winner) {
+    showWinnersBoard: function(winner) {
         winnersBoardContainer.style.pointerEvents = 'all';
         winnersBoardContainer.style.opacity = '1';
-        console.log(winner);
         if (winner === handlers.draw) {
             winnerText.innerHTML =  `${handlers.draw}`;
         } else {winnerText.innerHTML =  `${winner} wins!`;} 
@@ -93,7 +75,6 @@ let handlers = {
 }
 
 let lastSymbolUsed = 'cross';
-console.log(lastSymbolUsed);
 
 fields.forEach(field => field.addEventListener('click', function(event) {
     if (field.firstChild === null) {
@@ -123,7 +104,6 @@ button.addEventListener('click', function() {
             fields[i].removeChild(document.querySelector('img'));
         }   
     }
-
     winnersBoardContainer.style.pointerEvents = 'none';
     winnersBoardContainer.style.opacity = '0';
     lastSymbolUsed = 'cross';
