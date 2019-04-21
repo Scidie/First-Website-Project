@@ -136,6 +136,7 @@ body {
         padding: 1vw 1vw 2vw 1vw;
         background-color: #888888;
         overflow: hidden;
+        margin: auto;
     }
 
     .content-filter-entry {
@@ -143,15 +144,16 @@ body {
         align-items: center;
         /*padding: 1vw 1.5vw;*/
         font-size: 4vw;
+        margin: auto;
     }
 
     .shelve-entry {
-
         text-align: justify;
         color: white;
         padding: 0 1vw;
-        font-size: 1.5vw;
-        min-font-size: 1.5vw;
+        font-size: 2.7vw;
+        min-font-size: 2.4vw;
+        margin: auto;
     }
 }
 
@@ -175,6 +177,7 @@ body {
     color: white;
     padding: 0 1vw;
     font-size: 1.2vw;
+    margin: auto;
 }
 
 .shelve-img {
@@ -191,6 +194,7 @@ body {
     min-height: 5vw;
     /*min-height: 1vw;*/
     background-color: #818181;
+    margin: auto;
 }
 
 .content-filter-entry {
