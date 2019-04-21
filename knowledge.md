@@ -24,3 +24,59 @@
     
     You can use em values: this allows the spacing to remain relative to the font-size.
     
+    
+####custom scrollbar
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+####overflow
+
+div.ex1 {
+  overflow: scroll;
+}
+
+div.ex2 {
+  overflow: hidden;
+}
+
+div.ex3 {
+  overflow: auto;
+}
+
+div.ex4 {
+  overflow: visible;
+}
+
+####hiding scrollbar
+
+*#element::-webkit-scrollbar { 
+    display: none; 
+}
+If you want all scrollbars hidden, use
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+I'm not sure about restoring - this did work, but there might be a right way to do it:
+
+::-webkit-scrollbar { 
+    display: block; 
+}
