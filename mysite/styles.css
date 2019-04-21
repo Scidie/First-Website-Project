@@ -117,6 +117,7 @@ body {
     padding: 0.5vw 2vw 1vw 1vw;
     background-color: #888888;
     overflow: auto;
+    transition: 0.3s;
 }
 
 @media only handheld and (max-width: 800px) {
