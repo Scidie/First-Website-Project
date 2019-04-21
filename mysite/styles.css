@@ -155,19 +155,19 @@ body {
     border-style: solid;
     /*border-color: #242424;*/
     border-color: #888888;
-    padding: 0.5vw 2vw 1vw 1vw;
+    padding: 0 2vw 0 1vw;
     background-color: #888888;
     overflow: auto;
+    /*margin: 1vw;*/
     transition: 0.3s;
 }
 
 .shelve-entry {
     text-align: justify;
     color: white;
-    padding: 0.5vw 0;
     font-size: 1vw;
     min-font-size: 1.2vw;
-    margin: auto;
+    margin: 1vw 0;
 }
 
 .shelve-img {
@@ -181,7 +181,7 @@ body {
     color: #D1D0D0;
     /*overflow: auto;*/
     min-width: 3vw;
-    min-height: 4vw;
+    min-height: 5vh;
     /*min-height: 1vw;*/
     background-color: #818181;
     /*margin: auto;*/
