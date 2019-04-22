@@ -142,6 +142,9 @@ body {
     transform: scale(1.03);
 }
 
+.button-reset {
+}
+
 @media screen and (max-width: 450px) {
 	.field {
         display: flex;
