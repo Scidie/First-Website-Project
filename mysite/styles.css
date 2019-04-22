@@ -180,6 +180,8 @@ body {
     min-font-size: 1vw;
     background-color: #818181;
     border-style: none;
+    height: 100%;
+    width: 100%;
 }
 
 .content-filter-button :hover {
