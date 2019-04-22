@@ -69,9 +69,11 @@ body {
     justify-content: center;
     background: rgb(66, 63, 63);
 }
+
 .fix {
     display: none;
 }
+
 .game-board {
     display: grid;
     position: absolute;
@@ -87,7 +89,7 @@ body {
     justify-content: center;
     height: 140px;
     width: 140px;
-    background:rgb(66, 63, 63);
+    background: rgb(66, 63, 63);
 }
 
 .cross-image {
@@ -97,6 +99,7 @@ body {
 .circle-image {
     width: 100px;
 }
+
 #winners-board-container {
     display: flex;
     pointer-events: none;
@@ -105,7 +108,7 @@ body {
     transition: .5s;
     opacity: 0;
     position: absolute;
-    background:rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     font-weight: bold;
     color: black;
     height: 100vh;
@@ -125,6 +128,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 #button {
     display: block;
     font-size: 30px;
@@ -146,19 +150,19 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-	.field {
+    .field {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 25vw;
         width: 25vw;
-        background:rgb(66, 63, 63);
+        background: rgb(66, 63, 63);
     }
-    
+
     .cross-image {
         width: 15vw;
     }
-    
+
     .circle-image {
         width: 20vw;
     }
@@ -177,6 +181,7 @@ body {
         margin: 22px;
         padding: 6px;
     }
+
     .fix {
         display: block;
         position: absolute;
