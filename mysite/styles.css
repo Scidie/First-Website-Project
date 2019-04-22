@@ -260,7 +260,7 @@ body {
         flex-wrap: nowrap;
         padding: 0 1vw 2vw 1vw;
         background-color: #888888;
-        overflow: auto;
+        /*overflow: hidden;*/
         /*flex-basis: auto;*/
     }
 
