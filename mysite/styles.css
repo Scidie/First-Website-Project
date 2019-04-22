@@ -43,7 +43,8 @@ body {
     margin: 0 4vw;
 }
 
-.header-left-holder {
+.header-content-holder {
+    margin: 1vw;
 }
 
 .table-entry {
@@ -52,7 +53,7 @@ body {
 .header-date-holder {
 }
 
-.table-entry-link {
+.header-table-entry-link {
     font-family: 'Exo';
     letter-spacing: 0.1em;
     color: white;
