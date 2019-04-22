@@ -128,10 +128,7 @@ body {
     min-width: 10vw;
     min-height: 14vw;
     flex-wrap: nowrap;
-    border-style: solid;
-    /*border-color: #242424;*/
-    border-color: #888888;
-    padding: 2vh 2vw 0 2vw;
+    padding: 0 2vw 0 2vw;
     background-color: #888888;
     overflow: auto;
     transition: 0.4s;
@@ -165,7 +162,7 @@ body {
     color: #D1D0D0;
     /*overflow: auto;*/
     position: sticky;
-    top: -2vh;
+    top: 0;
     height: 5vh;
     min-height: 4vh;
     background-color: #818181;
