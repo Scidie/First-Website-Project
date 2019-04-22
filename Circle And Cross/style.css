@@ -27,6 +27,30 @@ body {
     margin: 0 8vw;
 }
 
+.table-entry-link {
+    font-family: 'Exo';
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: white;
+    font-size: 2vh;
+}
+
+.table-entry :hover {
+    color: gold;
+    transition: 0.1s;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+.table-divider {
+    padding: 0 2vh;
+    font-size: 2vh;
+    min-font-size: 0.5vh;
+    color: powderblue;
+    cursor: context-menu;
+    text-emphasis: #242424;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;

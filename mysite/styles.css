@@ -54,6 +54,7 @@ body {
     letter-spacing: 0.1em;
     color: white;
     font-size: 2vh;
+    min-font-size: 0.5vh;
 }
 
 .table-entry :hover {
