@@ -16,7 +16,7 @@ body {
     background-color: lightgrey;
 }
 
-.container {
+.page-container {
     display: grid;
     background-color: lightgrey;
     padding: 0 0 12vh 0;
@@ -85,14 +85,15 @@ body {
     cursor: pointer;
 }
 
-.main-content {
+.page-content {
     grid-row-start: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1vh 0;
+    padding: 1vh;
     background-color: #4D4D4D;
     color: white;
+
 }
 
 .top-container {
@@ -104,7 +105,7 @@ body {
 .counter-container {
     display: flex;
     flex-direction: column;
-    /*margin: auto;*/
+    padding: auto;
 }
 
 .counter {
@@ -114,8 +115,8 @@ body {
     flex-wrap: wrap;
     color: #818181;
     min-width: 40vw;
-    min-height: 50vh;
-    /*margin: auto;*/
+    min-height: 40vh;
+    padding: 1vh 0;
 }
 
 .content-containers {
@@ -144,9 +145,8 @@ body {
     width: 40%;
     height: 30vh;
     min-width: 10vw;
-    min-height: 14vw;
+    min-height: 15vw;
     flex-wrap: nowrap;
-    padding: 0 2vw 0 1vw;
     background-color: #888888;
     overflow: auto;
     transition: 0.4s;
@@ -253,7 +253,6 @@ body {
         display: inline-flex;
         justify-content: flex-start;
         flex-direction: column;
-        align-items: stretch;
         margin: auto;
         width: 95%;
         height: 30vh;
@@ -292,4 +291,10 @@ body {
     .shelve::-webkit-scrollbar-thumb {
         background: #818181;
     }
+}
+
+.main-container {
+}
+
+#header-date-holder {
 }
