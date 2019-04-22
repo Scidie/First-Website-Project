@@ -105,7 +105,7 @@ body {
 .top-container {
     font-size: 5vh;
     margin: 0 10vw 0 0;
-    padding: 2vw;
+    padding: 2vh 2vw;
 }
 
 .content-containers {
@@ -113,9 +113,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
     text-align: justify;
-    padding: 0 1vw 1vw 1vw;
+    padding: 0 1vw 1vh 1vw;
     font-size: 1.2vw;
-    min-font-size: 1vw;
+    min-font-size: 1vh;
 }
 
 .counter-container {
@@ -149,7 +149,7 @@ body {
     flex-direction: column;
     margin: auto;
     width: 40%;
-    height: 30vh;
+    height: 20vh;
     min-width: 10vw;
     min-height: 15vw;
     flex-wrap: nowrap;
@@ -247,7 +247,7 @@ body {
         font-size: 3vh;
         box-shadow: 0 4px 5px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
         margin: 0;
-        /*grid-template-columns: 15% 90%;*/
+        align-items: center;
         /*min-width: 10vw;*/
     }
 
@@ -285,9 +285,6 @@ body {
     }
 
     .shelve-content {
-        text-align: justify;
-        color: white;
-        /*padding: 0 1vh;*/
         font-size: 3vw;
         min-font-size: 2vw;
         /*margin: auto;*/
