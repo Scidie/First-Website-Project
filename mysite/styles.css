@@ -89,14 +89,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2vh 5vw;
+    padding: 2vh 0;
     background-color: #4D4D4D;
     color: white;
 }
 
 .top-container {
     font-size: 5vh;
-    margin: 0 10vh 0 1vh;
+    margin: 0 10vw 0 4vh;
+    padding: 1vw;
 }
 
 .counter-container {
@@ -168,6 +169,7 @@ body {
     /*min-height: 1vw;*/
     background-color: #818181;
     /*margin: auto;*/
+    padding: 0 1vw 0 1vw;
 }
 
 .content-filter-button {
