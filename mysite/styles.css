@@ -49,6 +49,7 @@ body {
 
 .header-table-entry-link {
     font-family: 'Exo';
+    -webkit-font-feature-settings: 'Exo';
     letter-spacing: 0.1em;
     color: white;
     font-size: 2vh;
@@ -132,6 +133,7 @@ body {
     color: #818181;
     min-width: 40vw;
     min-height: 35vh;
+    /*height: 100%;*/
 
     /*padding: 1vh 1vh;*/
 }
@@ -159,7 +161,7 @@ body {
 
     height: 35vh;
     min-height: 15vw;
-    /*max-height: 40vh;*/
+    max-height: 40vh;
 
     overflow: auto;
     transition: 0.4s;
@@ -277,6 +279,7 @@ body {
         height: 30vh;
         min-width: 10vw;
         min-height: 15vw;
+        max-height: 45vh;
         flex-wrap: nowrap;
         padding: 0 1vw 2vw 1vw;
         background-color: #888888;
@@ -331,8 +334,27 @@ body {
     font-size: 2vh;
     text-align: center;
     margin: 1vh;
+    cursor: default;
 }
 
 .calendar-header-nav {
     padding: 0 1.5vh;
+}
+
+.calendar-table thead {
+    cursor: default;
+}
+
+#calendar {
+    min-height: 40vh;
+}
+
+.calendar-header-button {
+    padding: 1vh;
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    background: none;
+    color: white;
+    cursor: pointer;
 }

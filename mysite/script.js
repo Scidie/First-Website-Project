@@ -25,7 +25,7 @@ updateClock();
 setInterval(updateClock, 1000);
 
 
-let date = new Date();
+var date = new Date();
 
 const CALENDAR_CONTAINER = document.getElementById("calendar-container");
 var CALENDAR_BODY = document.getElementById("calendar-body");
@@ -54,36 +54,35 @@ class Calendar {
     // td - poziomo
 
     fillDays(monthDays) {
+        // date = new Date();
+
         let markup = "";
         let days = monthDays;
         let counter = 1;
-        console.log(days);
-        console.log(this.firstDayOfWeek(date));
+
 
         for (let i = 0; i < this.rows; i++) {
             markup += "<tr>";
-
             for (let j = 0; j < this.cols; j++) {
-                if (counter <= this.monthDaysAmount[this.currentMonth]) {
-                    // if (counter <= this.firstDayOfWeek(date)) {
-                    //     continue;
-                    // }
+                if (j > this.firstDayOfWeek(date)) {
+                    console.log("first day of week: " + this.firstDayOfWeek(date));
+                    markup += insertTD();
+                    continue;
+                }
+
+                if (counter <= this.monthDaysAmount[this.currentMonth - 1]) {
                     markup += insertTD(counter++);
                 }
             }
         }
-        console.log(markup);
+        // console.log(markup);
         CALENDAR_BODY.innerHTML = (markup);
     }
 
     firstDayOfWeek(date) {
-        let _date = new Date(date);
-        _date.setDate(1);
-        // let firstDay = _date.setDate(1);
-
-        console.log(date.getDate());
-        console.log(date.getFullYear() );
-        return _date.getDay();
+        date.setDate(1);
+        console.log(date.getDay());
+        // return new Date((new Date(2019, Month, 1)) - date.days);
     }
 }
 
