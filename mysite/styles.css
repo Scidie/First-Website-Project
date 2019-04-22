@@ -89,11 +89,10 @@ body {
     grid-row-start: 2;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
-    padding: 2vh 0;
+    justify-content: space-between;
+    /*padding: 1vh;*/
     background-color: #4D4D4D;
     color: white;
-    width: 100%;
 }
 
 .top-container {
@@ -105,7 +104,6 @@ body {
 .counter-container {
     display: flex;
     flex-direction: column;
-    padding: auto;
     /*margin: auto;*/
 }
 
@@ -148,7 +146,7 @@ body {
     min-width: 10vw;
     min-height: 14vw;
     flex-wrap: nowrap;
-    padding: 0 2vw 0 2vw;
+    padding: 0 2vw 0 1vw;
     background-color: #888888;
     overflow: auto;
     transition: 0.4s;
@@ -168,7 +166,7 @@ body {
     color: white;
     font-size: 1vw;
     min-font-size: 1.2vw;
-    margin: 1vw 1%;
+    margin: 1vw;
 }
 
 .shelve-img {
@@ -243,7 +241,8 @@ body {
         margin: 2vh 0 0 0;
         font-size: 3vh;
         box-shadow: 0 4px 5px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
-        justify-content: space-around;
+        /*grid-template-columns: 15% 90%;*/
+        /*min-width: 10vw;*/
     }
 
     .header-date-holder {
@@ -256,14 +255,14 @@ body {
         flex-direction: column;
         align-items: stretch;
         margin: auto;
-        width: 100%;
+        width: 95%;
         height: 30vh;
         min-width: 10vw;
         min-height: 15vw;
         flex-wrap: nowrap;
-        padding: 2vh 1vw 2vh 1vw;
+        padding: 0 1vw 2vw 1vw;
         background-color: #888888;
-        overflow: hidden;
+        /*overflow: hidden;*/
         /*flex-basis: auto;*/
     }
 
@@ -285,7 +284,7 @@ body {
     }
 
     .shelve::-webkit-scrollbar {
-        /*width: 1vw;*/
+        width: 2vw;
         color: black;
         background: #888888;
     }
