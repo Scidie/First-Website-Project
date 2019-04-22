@@ -1,9 +1,12 @@
-let date = new Date();
+var updateClock = function() {
+    let date = new Date();
 
-let hours = date.getHours();
-let minutes = date.getMinutes();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    let dateFormatted = hours + ":" + minutes + ":" + seconds;
 
-let dateFormatted = hours + ":" + minutes;
+    document.getElementById("header-date-holder").innerText = dateFormatted;
+};
 
-
-document.getElementById("header-date-holder").innerText = dateFormatted;
+setInterval(updateClock, 1000);
