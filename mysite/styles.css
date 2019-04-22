@@ -291,10 +291,17 @@ body {
     .shelve::-webkit-scrollbar-thumb {
         background: #818181;
     }
+
+    #header-date-holder {
+        display: none;
+    }
 }
 
 .main-container {
 }
 
 #header-date-holder {
-}
+    position: absolute;
+    right: 14vh;
+    color: white;
+ }
