@@ -16,13 +16,6 @@ body {
     background-color: lightgrey;
 }
 
-.page-container {
-    display: grid;
-    background-color: lightgrey;
-    padding: 0 0 12vh 0;
-}
-
-
 .header {
     grid-row-start: 1;
     display: flex;
@@ -85,12 +78,25 @@ body {
     cursor: pointer;
 }
 
+#header-date-holder {
+    position: absolute;
+    right: 12vh;
+    color: white;
+}
+
+.page-container {
+    display: grid;
+    background-color: lightgrey;
+    padding: 0 0 6vw 0;
+    width: 100%;
+}
+
 .page-content {
     grid-row-start: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1vh;
+    padding: 2vw;
     background-color: #4D4D4D;
     color: white;
 
@@ -99,7 +105,17 @@ body {
 .top-container {
     font-size: 5vh;
     margin: 0 10vw 0 0;
-    padding: 1vw;
+    padding: 2vw;
+}
+
+.content-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    padding: 0 1vw 1vw 1vw;
+    font-size: 1.2vw;
+    min-font-size: 1vw;
 }
 
 .counter-container {
@@ -115,18 +131,8 @@ body {
     flex-wrap: wrap;
     color: #818181;
     min-width: 40vw;
-    min-height: 40vh;
-    padding: 1vh 0;
-}
-
-.content-containers {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: justify;
-    /*padding: 0 4vw 5vh 2vh;*/
-    font-size: 1vw;
-    min-font-size: 1vw;
+    min-height: 35vh;
+    /*padding: 1vh 1vh;*/
 }
 
 .content-container-left {
@@ -249,6 +255,11 @@ body {
         display: none;
     }
 
+    .content-containers {
+        font-size: 4vw;
+        min-font-size: 1vw;
+    }
+
     .shelve {
         display: inline-flex;
         justify-content: flex-start;
@@ -296,12 +307,3 @@ body {
         display: none;
     }
 }
-
-.main-container {
-}
-
-#header-date-holder {
-    position: absolute;
-    right: 14vh;
-    color: white;
- }
