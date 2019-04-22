@@ -57,7 +57,13 @@ body {
     min-font-size: 0.5vh;
 }
 
-.table-entry :hover {
+.header-button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.header-button :hover {
     color: gold;
     transition: 0.1s;
     transition-timing-function: ease-out;
@@ -146,7 +152,7 @@ body {
 }
 
 .shelve {
-    display: flex;
+    display: inline-flex;
     /*justify-content: space-around;*/
     flex-direction: column;
     width: 45vh;
