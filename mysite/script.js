@@ -23,3 +23,26 @@ var updateClock = function() {
 };
 updateClock();
 setInterval(updateClock, 1000);
+
+
+let date = new Date();
+
+const CALENDAR_CONTAINER = document.getElementById("calendar-container");
+const CALENDAR_BODY = document.getElementById("calendar-body");
+
+let currentMonth = date.getMonth();
+
+
+
+// kolumny : 7 (dni tygodnia)
+// wiersze : 5 wierszy (dni miesiaca)
+
+const markup = `
+
+`;
+
+
+function fillDays() {
+
+}
+
