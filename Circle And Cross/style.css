@@ -35,13 +35,7 @@ body {
     letter-spacing: 0.1em;
     color: white;
     font-size: 2vh;
-}
-
-.table-entry :hover {
-    color: gold;
-    transition: 0.1s;
-    transition-timing-function: ease-out;
-    cursor: pointer;
+    min-font-size: 0.5vh;
 }
 
 .table-divider {
@@ -51,6 +45,19 @@ body {
     color: powderblue;
     cursor: context-menu;
     text-emphasis: #242424;
+}
+
+.header-button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.header-button :hover {
+    color: gold;
+    transition: 0.1s;
+    transition-timing-function: ease-out;
+    cursor: pointer;
 }
 
 .wrapper {

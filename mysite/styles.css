@@ -57,6 +57,15 @@ body {
     min-font-size: 0.5vh;
 }
 
+.table-divider {
+    padding: 0 2vh;
+    font-size: 2vh;
+    min-font-size: 2vh;
+    color: powderblue;
+    cursor: context-menu;
+    text-emphasis: #242424;
+}
+
 .header-button {
     cursor: pointer;
     border: none;
@@ -69,16 +78,6 @@ body {
     transition-timing-function: ease-out;
     cursor: pointer;
 }
-
-.table-divider {
-    padding: 0 2vh;
-    font-size: 2vh;
-    min-font-size: 2vh;
-    color: powderblue;
-    cursor: context-menu;
-    text-emphasis: #242424;
-}
-
 
 .main-content {
     grid-row-start: 2;

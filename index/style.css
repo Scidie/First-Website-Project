@@ -93,6 +93,19 @@ a {
     margin-bottom: 30px;
 }
 
+.header-button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.header-button :hover {
+    color: gold;
+    transition: 0.1s;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
 /* collapsible button */
 .collapsible {
     background-color: #242424;
