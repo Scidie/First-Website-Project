@@ -132,6 +132,7 @@ body {
     color: #818181;
     min-width: 40vw;
     min-height: 35vh;
+
     /*padding: 1vh 1vh;*/
 }
 
@@ -143,12 +144,14 @@ body {
 
 }
 
+/* TODO cards without filters should not hide title? card content should only overflow? */
+
 .shelve {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    margin: auto;
+    margin: 1vh 0;
 
     background-color: #888888;
     width: 40%;
@@ -177,6 +180,7 @@ body {
     font-size: 1vw;
     min-font-size: 1.2vw;
     margin: 1vw;
+    padding: 1vh;
 }
 
 .shelve-img {
@@ -307,4 +311,28 @@ body {
     #header-date-holder {
         display: none;
     }
+}
+
+#calendar-body {
+}
+
+.calendar-table td {
+    padding: 1vh;
+}
+
+.calendar-table {
+    text-align: center;
+    width: 100%;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2vh;
+    text-align: center;
+    margin: 1vh;
+}
+
+.calendar-header-nav {
+    padding: 0 1.5vh;
 }
