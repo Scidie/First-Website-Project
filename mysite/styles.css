@@ -51,7 +51,7 @@ body {
 }
 
 .header-date-holder {
-    /*right: 95%;*/
+
 }
 
 .header-table-entry-link {
@@ -167,7 +167,7 @@ body {
     /*overflow: auto;*/
     min-width: 3vw;
     min-height: 5vh;
-    /*min-height: 1vw;*/
+    min-height: 1vw;
     background-color: #818181;
     /*margin: auto;*/
     padding: 0 1vw 0 1vw;
