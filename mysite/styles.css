@@ -19,21 +19,21 @@ body {
 .container {
     display: grid;
     background-color: lightgrey;
-    padding: 7% 0 0 0;
+    padding: 5vh 0 0 0;
 }
 
 
 .header {
     grid-row-start: 1;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: sticky;
     z-index: 1;
     top: 0;
     background-color: deepskyblue;
-    padding: 1% 0;
-    margin: 2% 0 0 0;
-    font-size: 15px;
+    padding: 1.5vh 0;
+    margin: 2vh 0 0 0;
+    font-size: 3vh;
     box-shadow: 0 4px 5px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
     /*grid-template-columns: 15% 90%;*/
     /*min-width: 10vw;*/
@@ -51,6 +51,7 @@ body {
 }
 
 .header-date-holder {
+    /*right: 95%;*/
 }
 
 .header-table-entry-link {
@@ -62,7 +63,7 @@ body {
 }
 
 .table-divider {
-    padding: 0 2vh;
+    padding: 0 2vw;
     font-size: 2vh;
     min-font-size: 2vh;
     color: powderblue;
@@ -88,16 +89,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3% 4%;
-    margin: auto;
+    padding: 2vh 5vw;
     background-color: #4D4D4D;
     color: white;
-    /*box-shadow: 0 11px 12px -7px #000000, 15px 15px 10px 5px rgba(0, 0, 0, 0);*/
 }
 
 .top-container {
     font-size: 5vh;
-    margin: 0 10vh 3% 1vh;
+    margin: 0 10vh 0 1vh;
 }
 
 .counter-container {
@@ -136,12 +135,16 @@ body {
     transition: 0.3s;
 }
 
-.top {
-    /*top: 5%;*/
-    margin: 1vw;
+.shelve-title {
+    margin: 1vh 1vw;
 }
 
-.shelve-entry {
+.title {
+    text-align: center;
+    color: white;
+}
+
+.shelve-content {
     text-align: justify;
     color: white;
     font-size: 1vw;
@@ -180,11 +183,6 @@ body {
     cursor: pointer;
 }
 
-.title {
-    text-align: center;
-    color: white;
-}
-
 .content-containers {
     display: flex;
     flex-direction: row;
@@ -218,7 +216,7 @@ body {
     box-shadow: 0 11px 12px -7px #000000, 15px 15px 10px 5px rgba(0, 0, 0, 0);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .shelve {
         display: flex;
         justify-content: space-around;
@@ -245,11 +243,11 @@ body {
         margin: auto;
     }
 
-    .shelve-entry {
+    .shelve-content {
         text-align: justify;
         color: white;
         padding: 0 1vw;
-        font-size: 2.7vw;
+        font-size: 3vw;
         min-font-size: 2vw;
         margin: auto;
     }
