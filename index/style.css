@@ -75,12 +75,12 @@ a {
 }
 
 #tools > ul {
-    display: flex;
+    display: absolute;
     justify-content: center;
     z-index: 2;
     background: rgb(12, 92, 212);
     width: 0;
-    height: 0;
+    height: 0; 
     transition: .1s;
     padding: 0;
     top: -0px;
@@ -118,7 +118,7 @@ a {
 }
 
 #tools > .sidenav-container {
-    width: 150px;
+    width: 13vw;
 }
 
 #tools {
