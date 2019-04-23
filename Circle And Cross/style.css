@@ -93,11 +93,11 @@ body {
 }
 
 .cross-image {
-    width: 75px;
+    width: 75%;
 }
 
 .circle-image {
-    width: 100px;
+    width: 100%;
 }
 
 #winners-board-container {
