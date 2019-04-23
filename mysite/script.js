@@ -28,7 +28,7 @@ setInterval(updateClock, 1000);
 var date = new Date();
 
 const CALENDAR_CONTAINER = document.getElementById("calendar-container");
-var CALENDAR_BODY = document.getElementById("calendar-body");
+const CALENDAR_BODY = document.getElementById("calendar-body");
 
 // kolumny : 7 (dni tygodnia)
 // wiersze : 5 wierszy (dni miesiaca)
@@ -38,69 +38,59 @@ TR = "<tr>";
 TD = "<td>";
 
 
-// TODO cliking on a date replaces calendar's header with input field to save task, bottom: display task
-class Calendar {
-    currentMonth = date.getMonth();
-    monthDaysAmount = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-
-    rows = 5;
-    cols = 7;
-
-
-    constructor() {
-        this.fillDays(this.monthDaysAmount[this.currentMonth]);
-    }
-
-    // td - poziomo
-
-    fillDays(monthDays) {
-        // date = new Date();
-
-        let markup = "";
-        let days = monthDays;
-        let counter = 1;
-
-
-        for (let i = 0; i < this.rows; i++) {
-            markup += "<tr>";
-            for (let j = 0; j < this.cols; j++) {
-                if (j > this.firstDayOfWeek(date)) {
-                    console.log("first day of week: " + this.firstDayOfWeek(date));
-                    markup += insertTD();
-                    continue;
-                }
-
-                if (counter <= this.monthDaysAmount[this.currentMonth - 1]) {
-                    markup += insertTD(counter++);
-                }
-            }
-        }
-        // console.log(markup);
-        CALENDAR_BODY.innerHTML = (markup);
-    }
-
-    firstDayOfWeek(date) {
-        date.setDate(1);
-        console.log(date.getDay());
-        // return new Date((new Date(2019, Month, 1)) - date.days);
-    }
-}
-
 function insertTD(value) {
     return "<td>" + value + "</td>";
 }
 
+// console.log(Month.currentMonth());
 
-let cal = new Calendar();
-cal.fillDays();
+// TODO cliking on a date replaces calendar's header with input field to save task, bottom: display task
+class Calendar {
+    static rows = 5;
+    static cols = 7;
 
-
-class Month {
-    constructor(days) {
-        this._days = days;
+    constructor() {
+        Calendar.fillDays(Calendar.daysInMonth(date.getFullYear(), date.getMonth()));
+        // Calendar.fillDays(Calendar.daysInMonth(date.getFullYear(), date.getMonth() + 1));
     }
 
-    get days() {
-        return this._days;
+    static fillDays(monthDate) {
+        console.log(monthDate);
+        let markup = "";
+        let counter = 1;
+
+        for (let i = 0; i < this.rows; i++) {
+            markup += "<tr>";
+
+            for (let j = 0; j < this.cols; j++) {
+                if (counter <= monthDate) {
+                    if (j < this.firstDay(date.getFullYear(), date.getMonth()+1) && i === 0) {
+                        markup += "<td></td>";
+                        console.log("inside");
+                        // counter++;
+                        continue;
+                    }
+                    markup += insertTD(counter++);
+                } else {
+                    break;
+                }
+            }
+        }
+
+        CALENDAR_BODY.innerHTML = (markup);
+    }
+
+    static daysInMonth(iYear, iMonth) {
+        return (32 - new Date(iYear, iMonth, 32).getDate());
+    }
+
+    static firstDay(year, month) {
+        console.log(new Date(year, month).getDay());
+        return (new Date(year, month)).getDay() - 1;
     }
 }
+
+
+let cal = new Calendar();
+
+// console.log(Calendar.daysInMonth(new Date().getFullYear(), new Date().getMonth()));
