@@ -339,16 +339,18 @@ body {
     justify-content: space-between;
     font-size: 2vh;
     text-align: center;
-    margin: 1vh;
+    margin: 2vh 3vh;
     cursor: default;
+
 }
 
 .calendar-header-nav {
-    padding: 0 1.5vh;
+    padding: 0 1vh;
 }
 
 .calendar-table thead {
     cursor: default;
+    margin: 4vh;
 }
 
 #calendar {
@@ -356,11 +358,14 @@ body {
 }
 
 .calendar-header-button {
-    padding: 1vh;
+    padding: 0 1vh;
     height: 100%;
     width: 100%;
     border-style: none;
     background: none;
     color: white;
     cursor: pointer;
+}
+
+.calendar-header-content {
 }

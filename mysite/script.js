@@ -21,11 +21,7 @@ var updateClock = function () {
 
     document.getElementById("header-date-holder").innerText = dateFormatted;
 };
-updateClock();
-setInterval(updateClock, 1000);
 
-
-var date = new Date();
 
 const CALENDAR_CONTAINER = document.getElementById("calendar-container");
 const CALENDAR_BODY = document.getElementById("calendar-body");
@@ -45,17 +41,20 @@ function insertTD(value) {
 // console.log(Month.currentMonth());
 
 // TODO cliking on a date replaces calendar's header with input field to save task, bottom: display task
+// TODO clicking on month name gives month choice view
 class Calendar {
     static rows = 5;
     static cols = 7;
 
     constructor() {
-        Calendar.fillDays(Calendar.daysInMonth(date.getFullYear(), date.getMonth()));
-        // Calendar.fillDays(Calendar.daysInMonth(date.getFullYear(), date.getMonth() + 1));
+        // let date = new Date(2019, 2);
+        Calendar.fillDays(new Date());
     }
 
     static fillDays(monthDate) {
         console.log(monthDate);
+        let firstDay = Calendar.firstDay(monthDate.getFullYear(), monthDate.getMonth());
+        let daysInMonth = Calendar.daysInMonth(monthDate.getFullYear(), monthDate.getMonth());
         let markup = "";
         let counter = 1;
 
@@ -63,8 +62,8 @@ class Calendar {
             markup += "<tr>";
 
             for (let j = 0; j < this.cols; j++) {
-                if (counter <= monthDate) {
-                    if (j < this.firstDay(date.getFullYear(), date.getMonth()+1) && i === 0) {
+                if (counter <= daysInMonth) {
+                    if (j < firstDay && i === 0) {
                         markup += "<td></td>";
                         console.log("inside");
                         // counter++;
@@ -90,7 +89,8 @@ class Calendar {
     }
 }
 
-
-let cal = new Calendar();
+updateClock();
+setInterval(updateClock, 1000);
+new Calendar();
 
 // console.log(Calendar.daysInMonth(new Date().getFullYear(), new Date().getMonth()));
