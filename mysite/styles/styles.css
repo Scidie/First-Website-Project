@@ -18,58 +18,50 @@ body {
 
 .header {
     grid-row-start: 1;
-    display: flex;
-    flex-wrap: nowrap;
     position: sticky;
     z-index: 1;
     top: 0;
-    background-color: deepskyblue;
-    padding: 1.5vh 0;
-    margin: 7vh 0 0 0;
-    font-size: 3vh;
+    padding: 1.4vh 0 1.4vh 0;
+    margin: 9vh 0 0 0;
     box-shadow: 0 4px 5px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
-    /*grid-template-columns: 15% 90%;*/
-    /*min-width: 10vw;*/
+    background-color: deepskyblue;
 }
 
-.header-content-table {
-    margin: 0 4vw;
+.header-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 5vw;
+    height: 100%;
 }
 
-.header-content-holder {
-    margin: 1vw;
+.header-navigation-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-inline-start: 1vh;
 }
 
-.table-entry {
+.header-content-entry {
+    height: 100%;
 }
 
-.header-date-holder {
-
+.header-date-container {
+    position: absolute;
+    right: 5vw;
 }
 
-.header-table-entry-link {
-    font-family: 'Exo';
-    -webkit-font-feature-settings: 'Exo';
-    letter-spacing: 0.1em;
+#header-date-container {
     color: white;
-    font-size: 2vh;
-    min-font-size: 0.5vh;
-    vertical-align: text-bottom;
-}
-
-.table-divider {
-    padding: 0 2vw;
-    font-size: 2vh;
-    min-font-size: 2vh;
-    color: powderblue;
-    cursor: context-menu;
-    text-emphasis: #242424;
+    cursor: default;
 }
 
 .header-button {
-    cursor: pointer;
     border: none;
     background: transparent;
+    height: 100%;
 }
 
 .header-button :hover {
@@ -79,12 +71,25 @@ body {
     cursor: pointer;
 }
 
-#header-date-holder {
-    position: absolute;
-    right: 12vh;
+.header-button-link {
+    font-family: 'Exo';
+    /*letter-spacing: 0.1em;*/
     color: white;
-    cursor: default;
+    padding: 1vh;
+    font-size: 2vh;
+    min-font-size: 1vh;
+    vertical-align: text-bottom;
 }
+
+.header-divider {
+    font-size: 2vh;
+    min-font-size: 1vh;
+    color: powderblue;
+    cursor: default;
+    text-emphasis: #242424;
+}
+
+/* ------------------------------------------ */
 
 .page-container {
     display: grid;
@@ -250,78 +255,6 @@ body {
     box-shadow: 0 11px 12px -7px #000000, 15px 15px 10px 5px rgba(0, 0, 0, 0);
 }
 
-@media only screen and (max-width: 750px) {
-    .header {
-        grid-row-start: 1;
-        display: flex;
-        flex-wrap: nowrap;
-        position: sticky;
-        z-index: 1;
-        top: 0;
-        background-color: deepskyblue;
-        padding: 1.5vh 0;
-        font-size: 3vh;
-        box-shadow: 0 4px 5px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
-        margin: 0;
-        align-items: center;
-        /*min-width: 10vw;*/
-    }
-
-    .header-date-holder {
-        display: none;
-    }
-
-    .content-containers {
-        font-size: 4vw;
-        min-font-size: 1vw;
-    }
-
-    .shelve {
-        display: inline-flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        margin: auto;
-        width: 95%;
-        height: 30vh;
-        min-width: 10vw;
-        min-height: 15vw;
-        max-height: 45vh;
-        flex-wrap: nowrap;
-        padding: 0 1vw 2vw 1vw;
-        background-color: #888888;
-        /*overflow: hidden;*/
-        /*flex-basis: auto;*/
-    }
-
-    .content-filter-button {
-        display: grid;
-        align-items: center;
-        padding: 0 2vw;
-        font-size: 3vw;
-        margin: auto;
-    }
-
-    .shelve-content {
-        font-size: 3vw;
-        min-font-size: 2vw;
-        /*margin: auto;*/
-    }
-
-    .shelve::-webkit-scrollbar {
-        width: 2vw;
-        color: black;
-        background: #888888;
-    }
-
-    .shelve::-webkit-scrollbar-thumb {
-        background: #818181;
-    }
-
-    #header-date-holder {
-        display: none;
-    }
-}
-
 #calendar-body {
 }
 
@@ -371,4 +304,102 @@ body {
 }
 
 .calendar-header-content {
+}
+
+@media only screen and (max-width: 750px) {
+    .header {
+        grid-row-start: 1;
+        justify-content: space-around;
+        position: sticky;
+        z-index: 1;
+        top: 0;
+        background-color: deepskyblue;
+        padding: 1.4vh 0 1.4vh 0;
+        font-size: 3vh;
+        min-font-size: 1vh;
+        box-shadow: 0 4px 5px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
+        margin: 0;
+        /*min-width: 10vw;*/
+    }
+
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 5vw;
+        height: 100%;
+    }
+
+    .header-navigation-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 1vh;
+    }
+
+    .header-date-container {
+        display: none;
+    }
+
+    .header-button-link {
+        font-family: 'Exo';
+        /*letter-spacing: 0.1em;*/
+        color: white;
+        padding: 2vh;
+        font-size: 3vh;
+        min-font-size: 1.5vh;
+        vertical-align: baseline;
+    }
+
+    .content-containers {
+        font-size: 4vw;
+        min-font-size: 1vw;
+    }
+
+    .shelve {
+        display: inline-flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: auto;
+        width: 95%;
+        height: 30vh;
+        min-width: 10vw;
+        min-height: 15vw;
+        max-height: 45vh;
+        flex-wrap: nowrap;
+        padding: 0 1vw 2vw 1vw;
+        background-color: #888888;
+        /*overflow: hidden;*/
+        /*flex-basis: auto;*/
+    }
+
+    .content-filter-button {
+        display: grid;
+        align-items: center;
+        padding: 0 2vw;
+        font-size: 3vw;
+        margin: auto;
+    }
+
+    .shelve-content {
+        font-size: 3vw;
+        min-font-size: 2vw;
+        /*margin: auto;*/
+    }
+
+    .shelve::-webkit-scrollbar {
+        width: 2vw;
+        color: black;
+        background: #888888;
+    }
+
+    .shelve::-webkit-scrollbar-thumb {
+        background: #818181;
+    }
+
+    #header-date-container {
+        display: none;
+    }
 }
