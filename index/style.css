@@ -21,7 +21,8 @@ a {
 
 #container {
     display: grid;
-    margin: 0 0 0 5vw;
+    grid-template-columns: auto 50% auto;
+    margin: 0 5vw 0 5vw;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -131,8 +132,6 @@ a {
     grid-column-start: 2;
     display: block;
     background-color: lightgray;
-
-    /*height: fit-content;*/
     text-align: center;
     box-shadow: 4px 4px 5px #888888;
 }
@@ -171,7 +170,7 @@ a {
     color: #818181;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    /*width: 100%;*/
     border: none;
     text-align: left;
     outline: none;

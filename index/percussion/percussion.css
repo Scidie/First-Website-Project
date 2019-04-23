@@ -9,9 +9,9 @@
     display: flex;
     user-select:none;
     position: relative;
-    width: 80px;
-    height: 80px;
-    border: solid 1px black;
+    height: 4vw;
+    width: 4vw;
+    /*border: solid 1px black;*/
     justify-content: center;
     align-items: center;
     margin: 2px;
