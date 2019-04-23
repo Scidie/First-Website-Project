@@ -155,7 +155,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    margin: 1vh 0;
+    margin: 1vh;
 
     background-color: #888888;
     width: 40%;

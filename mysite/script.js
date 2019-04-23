@@ -45,13 +45,14 @@ function insertTD(value) {
 class Calendar {
     static rows = 5;
     static cols = 7;
+    static date = new Date();
 
     constructor() {
         // let date = new Date(2019, 2);
-        Calendar.fillDays(new Date());
+        Calendar.fillCalendar(new Date());
     }
 
-    static fillDays(monthDate) {
+    static fillCalendar(monthDate) {
         console.log(monthDate);
         let firstDay = Calendar.firstDay(monthDate.getFullYear(), monthDate.getMonth());
         let daysInMonth = Calendar.daysInMonth(monthDate.getFullYear(), monthDate.getMonth());
@@ -91,6 +92,20 @@ class Calendar {
 
 updateClock();
 setInterval(updateClock, 1000);
-new Calendar();
+const calendar = new Calendar();
+
+let leftButton = document.getElementById("calendar-header-button-left");
+let rightButton = document.getElementById("calendar-header-button-right");
+
+let year;
+let month = new Date().getMonth();
+
+leftButton.addEventListener('click', function () {
+    Calendar.fillCalendar(new Date(2019, --month))
+});
+
+rightButton.addEventListener('click', function () {
+    Calendar.fillCalendar(new Date(2019, ++month))
+});
 
 // console.log(Calendar.daysInMonth(new Date().getFullYear(), new Date().getMonth()));
