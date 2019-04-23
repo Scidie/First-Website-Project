@@ -18,44 +18,34 @@ var updateClock = function () {
     }
 
     let dateFormatted = hours + ":" + minutes + ":" + seconds;
-
     document.getElementById("header-date-holder").innerText = dateFormatted;
 };
-
 
 const CALENDAR_CONTAINER = document.getElementById("calendar-container");
 const CALENDAR_BODY = document.getElementById("calendar-body");
 
-// kolumny : 7 (dni tygodnia)
-// wiersze : 5 wierszy (dni miesiaca)
-
 // TODO leap month - luty - 28/29
-TR = "<tr>";
-TD = "<td>";
 
-
-function insertTD(value) {
-    return "<td>" + value + "</td>";
-}
 
 // console.log(Month.currentMonth());
 
 // TODO cliking on a date replaces calendar's header with input field to save task, bottom: display task
+// or current row gets replaced with text input
 // TODO clicking on month name gives month choice view
 class Calendar {
-    static rows = 5;
+    /* 1 extra row so that when 1st day of month is sunday, last days get displayed too */
+    // TODO automate it - 6 rows only if needed!
+    static rows = 6;
     static cols = 7;
-    static date = new Date();
+
 
     constructor() {
-        // let date = new Date(2019, 2);
-        Calendar.fillCalendar(new Date());
+        Calendar.fillCalendar(new Date())
     }
 
-    static fillCalendar(monthDate) {
-        console.log(monthDate);
-        let firstDay = Calendar.firstDay(monthDate.getFullYear(), monthDate.getMonth());
-        let daysInMonth = Calendar.daysInMonth(monthDate.getFullYear(), monthDate.getMonth());
+    static fillCalendar(currentDate) {
+        let firstDay = Calendar.firstDay(currentDate.getFullYear(), currentDate.getMonth());
+        let daysInMonth = Calendar.daysInMonth(currentDate.getFullYear(), currentDate.getMonth());
         let markup = "";
         let counter = 1;
 
@@ -66,17 +56,12 @@ class Calendar {
                 if (counter <= daysInMonth) {
                     if (j < firstDay && i === 0) {
                         markup += "<td></td>";
-                        console.log("inside");
-                        // counter++;
                         continue;
                     }
                     markup += insertTD(counter++);
-                } else {
-                    break;
                 }
             }
         }
-
         CALENDAR_BODY.innerHTML = (markup);
     }
 
@@ -85,27 +70,50 @@ class Calendar {
     }
 
     static firstDay(year, month) {
-        console.log(new Date(year, month).getDay());
-        return (new Date(year, month)).getDay() - 1;
+        let temp = new Date(year, month).getDay();
+
+        if (temp === 0) {
+            return 6;
+        }
+        return temp - 1;
     }
 }
 
+function insertTD(value) {
+    return "<td>" + value + "</td>";
+}
+
+const leftButton = document.getElementById("calendar-header-button-left");
+const rightButton = document.getElementById("calendar-header-button-right");
+const monthId = document.getElementById("calendar-header-month");
+const yearId = document.getElementById("calendar-header-year");
+const date = new Date();
+
+monthNames = [
+    "Styczeń", "Luty", "Marzec", "Kwiecień",
+    "Maj", "Czerwiec", "Lipiec", "Sierpień",
+    "Wrzesień", "Październik", "Listopad", "Grudzień"];
+
+function handleLeft() {
+    date.setMonth(date.getMonth() - 1);
+    monthId.innerText = monthNames[date.getMonth()];
+    yearId.innerText = date.getFullYear().toString();
+    Calendar.fillCalendar(date);
+}
+
+function handleRight() {
+    date.setMonth(date.getMonth() + 1);
+    monthId.innerText = monthNames[date.getMonth()];
+    yearId.innerText = date.getFullYear().toString();
+    Calendar.fillCalendar(date);
+}
+
+
+/* RUNNING CODE */
 updateClock();
 setInterval(updateClock, 1000);
-const calendar = new Calendar();
+cal = new Calendar();
 
-let leftButton = document.getElementById("calendar-header-button-left");
-let rightButton = document.getElementById("calendar-header-button-right");
-
-let year;
-let month = new Date().getMonth();
-
-leftButton.addEventListener('click', function () {
-    Calendar.fillCalendar(new Date(2019, --month))
-});
-
-rightButton.addEventListener('click', function () {
-    Calendar.fillCalendar(new Date(2019, ++month))
-});
-
-// console.log(Calendar.daysInMonth(new Date().getFullYear(), new Date().getMonth()));
+/* EVENT LISTENERS */
+leftButton.addEventListener('click', handleLeft);
+rightButton.addEventListener('click', handleRight);
