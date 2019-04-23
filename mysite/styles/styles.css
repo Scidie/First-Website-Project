@@ -334,7 +334,7 @@ body {
     width: 100%;
 }
 
-.calendar-header {
+#calendar-header {
     display: flex;
     justify-content: space-between;
     font-size: 2vh;
@@ -349,9 +349,11 @@ body {
 
 }
 
-.calendar-table td {
+#calendar-body td:hover {
     /*cursor: default;*/
-    /*margin: 4vh;*/
+    margin: 4vh;
+    background-color: #818181;
+    /*color: yellow;*/
 }
 
 #calendar {

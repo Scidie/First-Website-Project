@@ -38,7 +38,6 @@ class Calendar {
     static rows = 6;
     static cols = 7;
 
-
     constructor() {
         Calendar.fillCalendar(new Date())
     }
@@ -50,7 +49,7 @@ class Calendar {
         let counter = 1;
 
         for (let i = 0; i < this.rows; i++) {
-            markup += "<tr>";
+            markup += `<tr id ='"${i}"'>`;
 
             for (let j = 0; j < this.cols; j++) {
                 if (counter <= daysInMonth) {
@@ -58,7 +57,7 @@ class Calendar {
                         markup += "<td></td>";
                         continue;
                     }
-                    markup += insertTD(counter++);
+                    markup += `<td class ='"${counter}"'>` + counter++ + "</td>"
                 }
             }
         }
@@ -117,3 +116,5 @@ cal = new Calendar();
 /* EVENT LISTENERS */
 CALENDAR_BUTTON_LEFT.addEventListener('click', handleLeft);
 CALENDAR_BUTTON_RIGHT.addEventListener('click', handleRight);
+
+// if (document.getElementById("5").childElementCount)
