@@ -60,7 +60,7 @@ a {
 
 .sidenav-container a {
     transition: 0.2s; /* transition on hover */
-    padding: 2px 8px;
+    padding: 0.5vh 1vw;
 }
 
 .sidenav-container :hover {
@@ -132,7 +132,7 @@ a {
     display: block;
     background-color: lightgray;
 
-    height: fit-content;
+    /*height: fit-content;*/
     text-align: center;
     box-shadow: 4px 4px 5px #888888;
 }
@@ -148,8 +148,8 @@ a {
 .header {
     display: inline-block;
     vertical-align: top;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
 }
 
 .header-button {
@@ -194,9 +194,8 @@ a {
 
 .col {
     font-family: 'Open Sans Condensed', serif;
-    padding-bottom: 2px;
     background-color:  #f1f1f1;
-    padding: 20px 5% 6px 20px;
+    padding: 3vh 2vh 0.2vh 1.5vw;
     text-align: justify;
     box-shadow: 4px 4px 5px #888888;
 }
