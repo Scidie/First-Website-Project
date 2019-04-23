@@ -83,11 +83,11 @@ function insertTD(value) {
     return "<td>" + value + "</td>";
 }
 
-const leftButton = document.getElementById("calendar-header-button-left");
-const rightButton = document.getElementById("calendar-header-button-right");
-const monthId = document.getElementById("calendar-header-month");
-const yearId = document.getElementById("calendar-header-year");
-const date = new Date();
+const CALENDAR_BUTTON_LEFT = document.getElementById("calendar-header-button-left");
+const CALENDAR_BUTTON_RIGHT = document.getElementById("calendar-header-button-right");
+const MONTH_ID = document.getElementById("calendar-header-month");
+const YEAR_ID = document.getElementById("calendar-header-year");
+const DATE = new Date();
 
 monthNames = [
     "Styczeń", "Luty", "Marzec", "Kwiecień",
@@ -95,17 +95,17 @@ monthNames = [
     "Wrzesień", "Październik", "Listopad", "Grudzień"];
 
 function handleLeft() {
-    date.setMonth(date.getMonth() - 1);
-    monthId.innerText = monthNames[date.getMonth()];
-    yearId.innerText = date.getFullYear().toString();
-    Calendar.fillCalendar(date);
+    DATE.setMonth(DATE.getMonth() - 1);
+    MONTH_ID.innerText = monthNames[DATE.getMonth()];
+    YEAR_ID.innerText = DATE.getFullYear().toString();
+    Calendar.fillCalendar(DATE);
 }
 
 function handleRight() {
-    date.setMonth(date.getMonth() + 1);
-    monthId.innerText = monthNames[date.getMonth()];
-    yearId.innerText = date.getFullYear().toString();
-    Calendar.fillCalendar(date);
+    DATE.setMonth(DATE.getMonth() + 1);
+    MONTH_ID.innerText = monthNames[DATE.getMonth()];
+    YEAR_ID.innerText = DATE.getFullYear().toString();
+    Calendar.fillCalendar(DATE);
 }
 
 
@@ -115,5 +115,5 @@ setInterval(updateClock, 1000);
 cal = new Calendar();
 
 /* EVENT LISTENERS */
-leftButton.addEventListener('click', handleLeft);
-rightButton.addEventListener('click', handleRight);
+CALENDAR_BUTTON_LEFT.addEventListener('click', handleLeft);
+CALENDAR_BUTTON_RIGHT.addEventListener('click', handleRight);
