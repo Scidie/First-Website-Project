@@ -83,6 +83,7 @@ body {
     position: absolute;
     right: 12vh;
     color: white;
+    cursor: default;
 }
 
 .page-container {
@@ -100,13 +101,13 @@ body {
     padding: 2vw;
     background-color: #4D4D4D;
     color: white;
-
 }
 
 .top-container {
     font-size: 5vh;
     margin: 0 10vw 0 0;
     padding: 2vh 2vw;
+    cursor: default;
 }
 
 .content-containers {
@@ -117,6 +118,7 @@ body {
     padding: 0 1vw 1vh 1vw;
     font-size: 1.2vw;
     min-font-size: 1vh;
+    cursor: default;
 }
 
 .counter-container {
@@ -169,6 +171,7 @@ body {
 
 .shelve-title {
     margin: 1vh 1vw;
+    cursor: default;
 }
 
 .title {
@@ -183,6 +186,7 @@ body {
     min-font-size: 1.2vw;
     margin: 1vw;
     padding: 1vh;
+    cursor: default;
 }
 
 .shelve-img {
@@ -200,6 +204,7 @@ body {
     height: 5vh;
     min-height: 4vh;
     background-color: #818181;
+    width: 100%;
     /*margin: auto;*/
     /*padding: 0 1vw 0 1vw;*/
 }
@@ -215,6 +220,7 @@ body {
     border-style: none;
     height: 100%;
     width: 100%;
+    cursor: pointer;
 }
 
 .content-filter-button :hover {
