@@ -13,7 +13,7 @@ a {
 }
 
 body {
-    background-color: lightgrey;
+    background-color: #242424;
 }
 
 .header {
@@ -22,7 +22,7 @@ body {
     z-index: 1;
     top: 0;
     padding: 1.4vh 0 1.4vh 0;
-    margin: 9vh 0 0 0;
+    margin: 3.5vh 0 0 0;
     box-shadow: 0 4px 5px -7px #000000, 5px 5px 10px 5px rgba(0, 0, 0, 0);
     background-color: deepskyblue;
 }
@@ -93,9 +93,12 @@ body {
 
 .page-container {
     display: grid;
-    background-color: lightgrey;
-    padding: 0 0 6vw 0;
+    padding: 12vh 0 7vh 0;
     width: 100%;
+}
+
+#page-container-last {
+    padding: 9vh 0 0 0;
 }
 
 .page-content {
@@ -104,7 +107,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 2vw;
-    background-color: #4D4D4D;
+    background-color: #303030;
     color: white;
 }
 
@@ -137,7 +140,6 @@ body {
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    color: #818181;
     min-width: 40vw;
     min-height: 35vh;
     /*height: 100%;*/
@@ -162,7 +164,7 @@ body {
     justify-content: flex-start;
     margin: 1vh;
 
-    background-color: #888888;
+    background-color: #4D4D4D;
     width: 40%;
     min-width: 10vw;
 
@@ -202,13 +204,12 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    color: #D1D0D0;
     /*overflow: auto;*/
     position: sticky;
     top: 0;
     height: 5vh;
     min-height: 4vh;
-    background-color: #818181;
+    background-color: #575757;
     width: 100%;
     /*margin: auto;*/
     /*padding: 0 1vw 0 1vw;*/
@@ -220,8 +221,8 @@ body {
     padding: 0 1.5vw;
     font-size: 1.3vw;
     min-font-size: 1vw;
-    background-color: #818181;
-    color: #D1D0D0;
+    background-color: #575757;
+    color: #999999;
     border-style: none;
     height: 100%;
     width: 100%;
@@ -235,24 +236,20 @@ body {
 .shelve::-webkit-scrollbar {
     width: 0.7vw;
     color: black;
-    background: #888888;
+    /*background: #888888;*/
 }
 
-.shelve::-webkit-scrollbar-track {
-    /*color: #242424;*/
-}
 
 .shelve::-webkit-scrollbar-thumb {
-    background: #818181;
+    background: #575757;
 }
 
 .footer {
     grid-row-start: 3;
     padding: 0 15vw;
     margin: 0;
-    background-color: #242424;
-    color: #818181;
-    box-shadow: 0 11px 12px -7px #000000, 15px 15px 10px 5px rgba(0, 0, 0, 0);
+    background-color: black;
+    color: #4D4D4D;
 }
 
 #calendar-body {
@@ -285,7 +282,7 @@ body {
 #calendar-body td:hover {
     /*cursor: default;*/
     margin: 4vh;
-    background-color: #818181;
+    /*background-color: #818181;*/
     /*color: yellow;*/
 }
 
@@ -370,7 +367,7 @@ body {
         max-height: 45vh;
         flex-wrap: nowrap;
         padding: 0 1vw 2vw 1vw;
-        background-color: #888888;
+        background-color: #4D4D4D;
         /*overflow: hidden;*/
         /*flex-basis: auto;*/
     }
@@ -392,11 +389,6 @@ body {
     .shelve::-webkit-scrollbar {
         width: 2vw;
         color: black;
-        background: #888888;
-    }
-
-    .shelve::-webkit-scrollbar-thumb {
-        background: #818181;
     }
 
     #header-date-container {
