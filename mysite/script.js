@@ -18,11 +18,9 @@ var updateClock = function () {
     }
 
     let dateFormatted = hours + ":" + minutes + ":" + seconds;
-    document.getElementById("header-date-holder").innerText = dateFormatted;
+    document.getElementById("header-date-container").innerText = dateFormatted;
 };
 
-const CALENDAR_CONTAINER = document.getElementById("calendar-container");
-const CALENDAR_BODY = document.getElementById("calendar-body");
 
 // TODO leap month - luty - 28/29
 
@@ -78,10 +76,11 @@ class Calendar {
     }
 }
 
-function insertTD(value) {
-    return "<td>" + value + "</td>";
-}
 
+// CALENDAR_HEADER.style.display = "none";
+const CALENDAR_CONTAINER = document.getElementById("calendar-container");
+const CALENDAR_BODY = document.getElementById("calendar-body");
+const CALENDAR_HEADER = document.getElementById("calendar-header");
 const CALENDAR_BUTTON_LEFT = document.getElementById("calendar-header-button-left");
 const CALENDAR_BUTTON_RIGHT = document.getElementById("calendar-header-button-right");
 const MONTH_ID = document.getElementById("calendar-header-month");
@@ -106,6 +105,7 @@ function handleRight() {
     YEAR_ID.innerText = DATE.getFullYear().toString();
     Calendar.fillCalendar(DATE);
 }
+
 
 
 /* RUNNING CODE */
