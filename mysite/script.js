@@ -18,7 +18,7 @@ var updateClock = function () {
     }
 
     let dateFormatted = hours + ":" + minutes + ":" + seconds;
-    document.getElementById("header-date-container").innerText = dateFormatted;
+    document.getElementById("header-date").innerText = dateFormatted;
 };
 
 
